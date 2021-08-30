@@ -1903,7 +1903,7 @@ DaGood.Specs.TextSize = 14.000
 
 -- Scripts:
 
-local function DFYRR_fake_script() -- DaGood.Player.Client 
+local function ZWKRH_fake_script() -- DaGood.Player.Client 
 	local script = Instance.new('LocalScript', DaGood.Player)
 
 	local textbox = script.Parent.input
@@ -1970,8 +1970,8 @@ local function DFYRR_fake_script() -- DaGood.Player.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(DFYRR_fake_script)()
-local function DDLTGQP_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(ZWKRH_fake_script)()
+local function YRGYEMZ_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
@@ -1988,8 +1988,8 @@ local function DDLTGQP_fake_script() -- DaGood.goTo.X
 		end
 	end)
 end
-coroutine.wrap(DDLTGQP_fake_script)()
-local function XBVWFI_fake_script() -- DaGood.Reach.X 
+coroutine.wrap(YRGYEMZ_fake_script)()
+local function TUOUIH_fake_script() -- DaGood.Reach.X 
 	local script = Instance.new('LocalScript', DaGood.Reach)
 
 	local Reach = script.Parent
@@ -2043,8 +2043,93 @@ local function XBVWFI_fake_script() -- DaGood.Reach.X
 		})
 	end
 end
-coroutine.wrap(XBVWFI_fake_script)()
-local function CBHRQAL_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(TUOUIH_fake_script)()
+local function OILHERX_fake_script() -- DaGood.Target.X 
+	local script = Instance.new('LocalScript', DaGood.Target)
+
+	local Target = script.Parent
+	local player = game:GetService('Players').LocalPlayer
+	
+	local input = script.Parent.Parent.Parent.Parent.Player.input
+	
+	Target.MouseButton1Click:Connect(function()
+		if Target.Text == 'Target' then
+			Target.Text = 'Untarget'
+			pcall(function()
+				player.Character.LeftHand.LeftWrist:Destroy();
+				player.Character.RightHand.RightWrist:Destroy();
+			end);
+			local loopFunction = function()
+				if game.Players:FindFirstChild(input.Text).Character then
+					player.Character.LeftHand.CFrame  = CFrame.new(game.Players[input.Text].Character.UpperTorso.Position);
+					player.Character.RightHand.CFrame = CFrame.new(game.Players[input.Text].Character.UpperTorso.Position);
+					if game.Players:FindFirstChild(input.Text).Character.BodyEffects['K.O'].Value == true then
+						Target.Text = 'Target'
+					end
+				else
+					Target.Text = 'Target'
+				end
+			end;        
+			local Loop
+			local Start = function()
+				Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+			end;         
+			local Pause = function()
+				Loop:Disconnect()
+				announce('Target', 'no longer targeting', 5)
+				player.Character.LeftHand.CFrame  = player.Character.LeftLowerArm.CFrame
+				player.Character.RightHand.CFrame = player.Character.RightLowerArm.CFrame
+			end;
+			Start()
+			repeat wait() until Target.Text == 'Target'
+			Pause()
+		else
+			Target.Text = 'Target'
+		end
+	end)
+	
+	function announce(title,text,time)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = title;
+			Text = text;
+			Duration = time;
+		})
+	end
+end
+coroutine.wrap(OILHERX_fake_script)()
+local function YNBDASM_fake_script() -- DaGood.View.X 
+	local script = Instance.new('LocalScript', DaGood.View)
+
+	local View = script.Parent
+	local input = script.Parent.Parent.Parent.Parent.Player.input
+	
+	local player = game:GetService('Players').LocalPlayer
+	
+	View.MouseButton1Click:Connect(function()
+		if View.Text == 'View' then
+			View.Text = 'Unview'
+			repeat view(input.Text) until View.Text == 'View'
+			game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = player.Character:FindFirstChildWhichIsA('Humanoid')
+		else
+			View.Text = 'View'
+		end
+	end)
+	
+	function view(plr)
+		wait()
+		if game.Players:FindFirstChild(plr) then
+			if game.Players[plr].Character then
+				game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = game.Players:FindFirstChild(plr).Character.HumanoidRootPart
+			else
+				View.Text = 'View'
+			end
+		else
+			View.Text = 'View'
+		end
+	end
+end
+coroutine.wrap(YNBDASM_fake_script)()
+local function NAIYS_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2053,8 +2138,8 @@ local function CBHRQAL_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(CBHRQAL_fake_script)()
-local function BMFJTFG_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(NAIYS_fake_script)()
+local function ANCTCSC_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2119,8 +2204,107 @@ local function BMFJTFG_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(BMFJTFG_fake_script)()
-local function FZKQ_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(ANCTCSC_fake_script)()
+local function MVOPSZ_fake_script() -- DaGood.FreeFists.X 
+	local script = Instance.new('LocalScript', DaGood.FreeFists)
+
+	local FreeFists = script.Parent
+	
+	local player = game:GetService('Players').LocalPlayer
+	local mouse = player:GetMouse()
+	
+	local UIS = game:GetService('UserInputService')
+	
+	FreeFists.MouseButton1Click:Connect(function()
+		for i,v in next, workspace:GetDescendants() do
+			if v:IsA'Seat' then
+				v:Destroy()
+			end
+		end
+		local FistControl = false
+		pcall(function()
+			player.Character.LeftHand.LeftWrist:Destroy();
+			player.Character.RightHand.RightWrist:Destroy();
+		end);
+		local loopFunction = function()
+			player.Character.LeftHand.CFrame  = CFrame.new(mouse.Hit.p);
+			player.Character.RightHand.CFrame = CFrame.new(mouse.Hit.p);
+		end;        
+		local Loop
+		local Start = function()
+			Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+		end;         
+		local Pause = function()
+			Loop:Disconnect()
+		end;
+		UIS.InputBegan:Connect(function(a, b)
+			if a.KeyCode == Enum.KeyCode.T and not b then
+				if FistControl == false then
+					FistControl = true;
+					Start();
+				elseif FistControl == true then
+					FistControl = false;
+					Pause();
+					player.Character.LeftHand.CFrame  = player.Character.LeftLowerArm.CFrame
+					player.Character.RightHand.CFrame = player.Character.RightLowerArm.CFrame
+				end;
+			end;
+		end)
+	end)
+end
+coroutine.wrap(MVOPSZ_fake_script)()
+local function JPAAO_fake_script() -- DaGood.NoClip.X 
+	local script = Instance.new('LocalScript', DaGood.NoClip)
+
+	local NoClip = script.Parent
+	
+	local player = game:GetService('Players').LocalPlayer
+	local OldState = player.Character:FindFirstChildWhichIsA('Humanoid'):GetState()
+	
+	local UIS = game:GetService('UserInputService')
+	
+	NoClip.MouseButton1Click:Connect(function()
+		local Character = player.Character
+		local Humanoid = Character:FindFirstChildWhichIsA('Humanoid')
+		local Control = false
+		local loopFunction = function()
+			Humanoid:ChangeState(11)
+		end;
+		local Loop
+		local Start = function()
+			if Control == false then
+				Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+			end
+		end;
+		local Ended = function()
+			if Control == true then
+				Humanoid:ChangeState(OldState)
+			end
+		end;
+		Start()	
+		local Pause = function()
+			Loop:Disconnect()
+		end;
+		local Pause2 = function()
+			Start();
+			Loop2:Disconnect()
+		end;
+		UIS.InputBegan:Connect(function(a, b)
+			if a.KeyCode == Enum.KeyCode.Z and not b then
+				if Control == false then
+					Control = true;
+					Ended();
+					Pause();
+				elseif Control == true then
+					Control = false;
+					Pause2();
+				end;
+			end;
+		end);	
+	end)
+end
+coroutine.wrap(JPAAO_fake_script)()
+local function ILYV_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
@@ -2272,8 +2456,8 @@ local function FZKQ_fake_script() -- DaGood.Fly.X
 		end)
 	end)
 end
-coroutine.wrap(FZKQ_fake_script)()
-local function SWAD_fake_script() -- DaGood.DropDown.X 
+coroutine.wrap(ILYV_fake_script)()
+local function FSET_fake_script() -- DaGood.DropDown.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2296,8 +2480,8 @@ local function SWAD_fake_script() -- DaGood.DropDown.X
 		end
 	end)
 end
-coroutine.wrap(SWAD_fake_script)()
-local function HZIBVQ_fake_script() -- DaGood.PlayersImage.X 
+coroutine.wrap(FSET_fake_script)()
+local function CYRT_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -2305,8 +2489,8 @@ local function HZIBVQ_fake_script() -- DaGood.PlayersImage.X
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(HZIBVQ_fake_script)()
-local function JRFMI_fake_script() -- DaGood.CashAura.LocalScript 
+coroutine.wrap(CYRT_fake_script)()
+local function SSQYSW_fake_script() -- DaGood.CashAura.LocalScript 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2340,8 +2524,8 @@ local function JRFMI_fake_script() -- DaGood.CashAura.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JRFMI_fake_script)()
-local function LXLE_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(SSQYSW_fake_script)()
+local function JLETG_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2406,8 +2590,8 @@ local function LXLE_fake_script() -- DaGood.Frame.Client
 		end
 	end
 end
-coroutine.wrap(LXLE_fake_script)()
-local function MOMZYLN_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(JLETG_fake_script)()
+local function SYGM_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2417,4 +2601,4 @@ local function MOMZYLN_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(MOMZYLN_fake_script)()
+coroutine.wrap(SYGM_fake_script)()
