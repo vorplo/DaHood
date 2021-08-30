@@ -1884,7 +1884,7 @@ DaGood.Specs.TextSize = 14.000
 
 -- Scripts:
 
-local function PJVKQE_fake_script() -- DaGood.Player.Client 
+local function BCIGRHX_fake_script() -- DaGood.Player.Client 
 	local script = Instance.new('LocalScript', DaGood.Player)
 
 	local textbox = script.Parent.input
@@ -1951,8 +1951,8 @@ local function PJVKQE_fake_script() -- DaGood.Player.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(PJVKQE_fake_script)()
-local function MBYG_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(BCIGRHX_fake_script)()
+local function MZYI_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
@@ -1969,8 +1969,8 @@ local function MBYG_fake_script() -- DaGood.goTo.X
 		end
 	end)
 end
-coroutine.wrap(MBYG_fake_script)()
-local function EAKYC_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(MZYI_fake_script)()
+local function FZYLX_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2035,8 +2035,8 @@ local function EAKYC_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(EAKYC_fake_script)()
-local function AKPZSFF_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(FZYLX_fake_script)()
+local function PTRC_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2045,75 +2045,101 @@ local function AKPZSFF_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(AKPZSFF_fake_script)()
-local function XSSHUON_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(PTRC_fake_script)()
+local function YCASR_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
-	local FLYSPEED = tonumber(script.Parent.Input.Text) or 17
-	
-	local player = game:GetService('Players').LocalPlayer
+	local input = script.Parent.Input
 	
 	Fly.MouseButton1Click:Connect(function()
-		local plr = game.Players.LocalPlayer
-		local Humanoid = plr.Character:FindFirstChildWhichIsA('Humanoid')
-		local mouse = plr:GetMouse()
-		localplayer = plr
+		local FLYSPEED = tonumber(script.Parent.Input.Text)
+		print(FLYSPEED)
+	
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character:FindFirstChildWhichIsA('Humanoid')
+		local mouse = player:GetMouse()
+		
 		if workspace:FindFirstChild("Core") then
 			workspace.Core:Destroy()
 		end
+		
 		local Core = Instance.new("Part")
 		Core.Name = "Core"
 		Core.Size = Vector3.new(0.05, 0.05, 0.05)
+		
 		spawn(function()
 			Core.Parent = workspace
 			local Weld = Instance.new("Weld", Core)
 			Weld.Part0 = Core
-			Weld.Part1 = localplayer.Character.LowerTorso
+			Weld.Part1 = player.Character.LowerTorso
 			Weld.C0 = CFrame.new(0, 0, 0)
 		end)
+		
 		workspace:WaitForChild("Core")
+		
 		local torso = workspace.Core
-		flying = true
+		local flying = true
 		local speed = FLYSPEED
-		local keys={a=false,d=false,w=false,s=false}
+		
+		input.FocusLost:Connect(function(enter)
+			if (enter) then
+				FLYSPEED = input.Text
+				speed = FLYSPEED
+			end
+		end)
+		
+		local keys = { a = false, d = false, w = false, s = false }
 		local e1
 		local e2
+		
 		local function start()
-			local pos = Instance.new("BodyPosition",torso)
-			local gyro = Instance.new("BodyGyro",torso)
+			local pos = Instance.new("BodyPosition", torso)
+			local gyro = Instance.new("BodyGyro", torso)
+			
 			pos.Name="EPIXPOS"
 			pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
-			pos.position = torso.Position
+			pos.Position = torso.Position
+			
 			gyro.maxTorque = Vector3.new(15e15, 15e15, 15e15)
 			gyro.cframe = torso.CFrame
+			
 			repeat
 				wait()
-				Humanoid.PlatformStand=true
-				local new=gyro.cframe - gyro.cframe.p + pos.position
+				humanoid.PlatformStand = true
+				
+				local new = gyro.cframe - gyro.cframe.p + pos.Position
+				
 				if not keys.w and not keys.s and not keys.a and not keys.d then
 					speed=FLYSPEED
 				end
+				
 				if keys.w then
 					new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
 					speed=speed
 				end
+				
 				if keys.s then
 					new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
 					speed=speed
 				end
+				
 				if keys.d then
 					new = new * CFrame.new(speed,0,0)
 					speed=speed
 				end
+				
 				if keys.a then
 					new = new * CFrame.new(-speed,0,0)
 					speed=speed
 				end
+				
 				if speed>FLYSPEED then
 					speed=FLYSPEED
 				end
-				pos.position=new.p
+				
+				pos.Position = new.p
+				
 				if keys.w then
 					gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed),0,0)
 				elseif keys.s then
@@ -2122,54 +2148,58 @@ local function XSSHUON_fake_script() -- DaGood.Fly.X
 					gyro.cframe = workspace.CurrentCamera.CoordinateFrame
 				end
 			until flying == false
+			
 			if gyro then gyro:Destroy() end
 			if pos then pos:Destroy() end
-			flying=false
-			Humanoid.PlatformStand=false
-			speed=FLYSPEED
+			
+			flying = false
+			humanoid.PlatformStand = false
+			speed = FLYSPEED
 		end
-		e1=mouse.KeyDown:connect(function(key)
+		
+		e1 = mouse.KeyDown:connect(function(key)
 			if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
-			if key=="w" then
-				keys.w=true
-			elseif key=="s" then
-				keys.s=true
-			elseif key=="a" then
-				keys.a=true
-			elseif key=="d" then
-				keys.d=true
-			elseif key=="x" then
-				if flying==true then
-					flying=false
+			
+			if key == "w" then
+				keys.w = true
+			elseif key == "s" then
+				keys.s = true
+			elseif key == "a" then
+				keys.a = true
+			elseif key == "d" then
+				keys.d = true
+			elseif key == "x" then
+				if flying == true then
+					flying = false
 				else
-					flying=true
+					flying = true
 					start()
 				end
 			end
 		end)
+		
 		e2=mouse.KeyUp:connect(function(key)
-			if key=="w" then
-				keys.w=false
-			elseif key=="s" then
-				keys.s=false
-			elseif key=="a" then
-				keys.a=false
-			elseif key=="d" then
-				keys.d=false
+			if key == "w" then
+				keys.w = false
+			elseif key == "s" then
+				keys.s = false
+			elseif key == "a" then
+				keys.a = false
+			elseif key == "d" then
+				keys.d = false
 			end
 		end)
+		
 		start()
-		Fly()
 		
 		player.CharacterAdded:Connect(function()
 			repeat wait() until player.Character
 			wait(1)
-			Fly()
 		end)
 	end)
 end
-coroutine.wrap(XSSHUON_fake_script)()
-local function JGSXRX_fake_script() -- DaGood.DropDown.LocalScript 
+coroutine.wrap(YCASR_fake_script)()
+local function UXQAQG_fake_script() -- DaGood.DropDown.LocalScript 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2183,17 +2213,17 @@ local function JGSXRX_fake_script() -- DaGood.DropDown.LocalScript
 			DropDown.ImageRectOffset = Expanded
 			
 			Input.Visible = true
-			print('DropDown Menu Activated')
+			--// print('DropDown Menu Enabled')
 		else
 			DropDown.ImageRectOffset = Collapsed
 			
 			Input.Visible = false
-			print('DropDown Menu DeActivated')
+			--// print('DropDown Menu Disabled')
 		end
 	end)
 end
-coroutine.wrap(JGSXRX_fake_script)()
-local function EDECLJ_fake_script() -- DaGood.PlayersImage.LocalScript 
+coroutine.wrap(UXQAQG_fake_script)()
+local function RMCRRNN_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -2201,8 +2231,8 @@ local function EDECLJ_fake_script() -- DaGood.PlayersImage.LocalScript
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(EDECLJ_fake_script)()
-local function QPMI_fake_script() -- DaGood.CashAura.LocalScript 
+coroutine.wrap(RMCRRNN_fake_script)()
+local function DBGJRZF_fake_script() -- DaGood.CashAura.LocalScript 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2236,8 +2266,8 @@ local function QPMI_fake_script() -- DaGood.CashAura.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QPMI_fake_script)()
-local function YSEJNS_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(DBGJRZF_fake_script)()
+local function WNFXM_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2302,8 +2332,8 @@ local function YSEJNS_fake_script() -- DaGood.Frame.Client
 		end
 	end
 end
-coroutine.wrap(YSEJNS_fake_script)()
-local function DDLVJ_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(WNFXM_fake_script)()
+local function KTUTB_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2313,4 +2343,4 @@ local function DDLVJ_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(DDLVJ_fake_script)()
+coroutine.wrap(KTUTB_fake_script)()
