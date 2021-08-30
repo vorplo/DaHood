@@ -1987,7 +1987,7 @@ local function DZRU_fake_script() -- DaGood.Reach.X
 	Reach.MouseButton1Click:Connect(function()
 		if Reach.Text == 'ToolReach' then
 			if player.Character:FindFirstChildWhichIsA('Tool') then
-				player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(500,500,500)
+				player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(9999999,999999,99999999)
 				player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 			else
 				announce('Reach Error', 'you need to be holding a tool', 3)
