@@ -1,13 +1,8 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local DaGood = {
 	DaGood = Instance.new("ScreenGui"),
 	Frame = Instance.new("Frame"),
 	UICorner = Instance.new("UICorner"),
-	Player = Instance.new("Frame"),
+	Target = Instance.new("Frame"),
 	icon = Instance.new("ImageLabel"),
 	UICorner_2 = Instance.new("UICorner"),
 	input = Instance.new("TextBox"),
@@ -19,11 +14,11 @@ local DaGood = {
 	cashLabel = Instance.new("TextLabel"),
 	UICorner_4 = Instance.new("UICorner"),
 	Y = Instance.new("Frame"),
-	Player_2 = Instance.new("Frame"),
+	Player = Instance.new("Frame"),
 	UIGridLayout = Instance.new("UIGridLayout"),
 	Reach = Instance.new("TextButton"),
 	UICorner_5 = Instance.new("UICorner"),
-	Target = Instance.new("TextButton"),
+	Target_2 = Instance.new("TextButton"),
 	UICorner_6 = Instance.new("UICorner"),
 	View = Instance.new("TextButton"),
 	UICorner_7 = Instance.new("UICorner"),
@@ -170,8 +165,6 @@ local DaGood = {
 	Toggles = Instance.new("Frame"),
 	QToTp = Instance.new("TextButton"),
 	QToTpColor = Instance.new("TextLabel"),
-	HideBlock = Instance.new("TextButton"),
-	HideBlockColor = Instance.new("TextLabel"),
 	HideUser = Instance.new("TextButton"),
 	HideUserColor = Instance.new("TextLabel"),
 	AutoStomp = Instance.new("TextButton"),
@@ -192,19 +185,16 @@ local DaGood = {
 	CashAuraColor = Instance.new("TextLabel"),
 	AntiEffects = Instance.new("TextButton"),
 	AntiEffectsColor = Instance.new("TextLabel"),
-	AltArmor = Instance.new("TextButton"),
-	AltArmorColor = Instance.new("TextLabel"),
 	AntiBag = Instance.new("TextButton"),
 	AntiBagColor = Instance.new("TextLabel"),
 	AntiSlow = Instance.new("TextButton"),
 	AntiSlowColor = Instance.new("TextLabel"),
 	UIGridLayout_5 = Instance.new("UIGridLayout"),
 	X = Instance.new("Frame"),
-	UIListLayout = Instance.new("UIListLayout"),
 	Title = Instance.new("TextLabel"),
 	Home_2 = Instance.new("TextButton"),
 	UICorner_68 = Instance.new("UICorner"),
-	Player_3 = Instance.new("TextButton"),
+	Player_2 = Instance.new("TextButton"),
 	UICorner_69 = Instance.new("UICorner"),
 	SideScripts_2 = Instance.new("TextButton"),
 	UICorner_70 = Instance.new("UICorner"),
@@ -217,6 +207,7 @@ local DaGood = {
 	SellingTools_2 = Instance.new("TextButton"),
 	UICorner_74 = Instance.new("UICorner"),
 	Specs = Instance.new("TextLabel"),
+	UIListLayout = Instance.new("UIListLayout"),
 }
 
 --Properties:
@@ -234,32 +225,33 @@ DaGood.Frame.Size = UDim2.new(0, 605, 0, 336)
 DaGood.UICorner.CornerRadius = UDim.new(0.0125000002, 0)
 DaGood.UICorner.Parent = DaGood.Frame
 
-DaGood.Player.Name = "Player"
-DaGood.Player.Parent = DaGood.Frame
-DaGood.Player.AnchorPoint = Vector2.new(1, 0)
-DaGood.Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Player.BackgroundTransparency = 0.980
-DaGood.Player.Position = UDim2.new(1, 0, 0, 0)
-DaGood.Player.Size = UDim2.new(0, 134, 1, 0)
+DaGood.Target.Name = "Target"
+DaGood.Target.Parent = DaGood.Frame
+DaGood.Target.AnchorPoint = Vector2.new(1, 0)
+DaGood.Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Target.BackgroundTransparency = 0.980
+DaGood.Target.Position = UDim2.new(1, 0, 0, 0)
+DaGood.Target.Size = UDim2.new(0, 144, 1, 0)
 
 DaGood.icon.Name = "icon"
-DaGood.icon.Parent = DaGood.Player
+DaGood.icon.Parent = DaGood.Target
 DaGood.icon.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.icon.BackgroundTransparency = 1.000
 DaGood.icon.Position = UDim2.new(0.5, 0, 0.0350000001, 0)
-DaGood.icon.Size = UDim2.new(0, 108, 0, 104)
+DaGood.icon.Size = UDim2.new(0, 104, 0, 104)
 DaGood.icon.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 DaGood.UICorner_2.CornerRadius = UDim.new(0, 500)
 DaGood.UICorner_2.Parent = DaGood.icon
 
 DaGood.input.Name = "input"
-DaGood.input.Parent = DaGood.Player
+DaGood.input.Parent = DaGood.Target
+DaGood.input.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.input.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.input.BackgroundTransparency = 1.000
 DaGood.input.BorderSizePixel = 0
-DaGood.input.Position = UDim2.new(0.072641857, 0, 0.392097205, 0)
+DaGood.input.Position = UDim2.new(0.5, 0, 0.39199999, 0)
 DaGood.input.Size = UDim2.new(0, 115, 0, 31)
 DaGood.input.Font = Enum.Font.GothamBlack
 DaGood.input.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -277,35 +269,38 @@ DaGood.Frame_2.Position = UDim2.new(0.5, 0, 1, 0)
 DaGood.Frame_2.Size = UDim2.new(0.850000024, 0, 0.0500000007, 0)
 
 DaGood.bountyLabel.Name = "bountyLabel"
-DaGood.bountyLabel.Parent = DaGood.Player
+DaGood.bountyLabel.Parent = DaGood.Target
+DaGood.bountyLabel.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.bountyLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.bountyLabel.BackgroundTransparency = 1.000
 DaGood.bountyLabel.BorderSizePixel = 0
-DaGood.bountyLabel.Position = UDim2.new(0.072641857, 0, 0.633550763, 0)
+DaGood.bountyLabel.Position = UDim2.new(0.5, 0, 0.629999995, 0)
 DaGood.bountyLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.bountyLabel.Font = Enum.Font.Gotham
-DaGood.bountyLabel.Text = "Bounty:"
+DaGood.bountyLabel.Text = "Bounty: 123123"
 DaGood.bountyLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.bountyLabel.TextSize = 14.000
 
 DaGood.crewLabel.Name = "crewLabel"
-DaGood.crewLabel.Parent = DaGood.Player
+DaGood.crewLabel.Parent = DaGood.Target
+DaGood.crewLabel.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.crewLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.crewLabel.BackgroundTransparency = 1.000
 DaGood.crewLabel.BorderSizePixel = 0
-DaGood.crewLabel.Position = UDim2.new(0.072641857, 0, 0.737304032, 0)
+DaGood.crewLabel.Position = UDim2.new(0.5, 0, 0.736999989, 0)
 DaGood.crewLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.crewLabel.Font = Enum.Font.Gotham
-DaGood.crewLabel.Text = "Crew:"
+DaGood.crewLabel.Text = "Crew: 123123"
 DaGood.crewLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.crewLabel.TextSize = 14.000
 DaGood.crewLabel.TextWrapped = true
 
 DaGood.goTo.Name = "goTo"
-DaGood.goTo.Parent = DaGood.Player
-DaGood.goTo.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.goTo.Parent = DaGood.Target
+DaGood.goTo.AnchorPoint = Vector2.new(0.5, 0)
+DaGood.goTo.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.goTo.BorderSizePixel = 0
-DaGood.goTo.Position = UDim2.new(0.0729999989, 0, 0.861000001, 0)
+DaGood.goTo.Position = UDim2.new(0.5, 0, 0.861000001, 0)
 DaGood.goTo.Size = UDim2.new(0, 114, 0, 29)
 DaGood.goTo.Font = Enum.Font.GothamBlack
 DaGood.goTo.Text = "Go To"
@@ -313,24 +308,25 @@ DaGood.goTo.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.goTo.TextSize = 16.000
 DaGood.goTo.TextWrapped = true
 
-DaGood.UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+DaGood.UICorner_3.CornerRadius = UDim.new(0.115000002, 0)
 DaGood.UICorner_3.Parent = DaGood.goTo
 
 DaGood.cashLabel.Name = "cashLabel"
-DaGood.cashLabel.Parent = DaGood.Player
+DaGood.cashLabel.Parent = DaGood.Target
+DaGood.cashLabel.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.cashLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.cashLabel.BackgroundTransparency = 1.000
 DaGood.cashLabel.BorderSizePixel = 0
-DaGood.cashLabel.Position = UDim2.new(0.072641857, 0, 0.519756854, 0)
+DaGood.cashLabel.Position = UDim2.new(0.5, 0, 0.519999981, 0)
 DaGood.cashLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.cashLabel.Font = Enum.Font.Gotham
-DaGood.cashLabel.Text = "Cash:"
+DaGood.cashLabel.Text = "Cash: 123123"
 DaGood.cashLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.cashLabel.TextSize = 14.000
 DaGood.cashLabel.TextWrapped = true
 
 DaGood.UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
-DaGood.UICorner_4.Parent = DaGood.Player
+DaGood.UICorner_4.Parent = DaGood.Target
 
 DaGood.Y.Name = "Y"
 DaGood.Y.Parent = DaGood.Frame
@@ -339,21 +335,21 @@ DaGood.Y.BackgroundTransparency = 1.000
 DaGood.Y.Position = UDim2.new(0.25, 0, 0, 0)
 DaGood.Y.Size = UDim2.new(0, 316, 1, 0)
 
-DaGood.Player_2.Name = "Player"
-DaGood.Player_2.Parent = DaGood.Y
-DaGood.Player_2.AnchorPoint = Vector2.new(0, 0.5)
-DaGood.Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Player_2.BackgroundTransparency = 1.000
-DaGood.Player_2.Position = UDim2.new(0, 0, 0.5, 0)
-DaGood.Player_2.Size = UDim2.new(0, 316, 0, 300)
+DaGood.Player.Name = "Player"
+DaGood.Player.Parent = DaGood.Y
+DaGood.Player.AnchorPoint = Vector2.new(0, 0.5)
+DaGood.Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Player.BackgroundTransparency = 1.000
+DaGood.Player.Position = UDim2.new(0, 0, 0.5, 0)
+DaGood.Player.Size = UDim2.new(0, 298, 0, 300)
 
-DaGood.UIGridLayout.Parent = DaGood.Player_2
+DaGood.UIGridLayout.Parent = DaGood.Player
 DaGood.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 DaGood.UIGridLayout.CellSize = UDim2.new(0, 96, 0, 25)
 
 DaGood.Reach.Name = "Reach"
-DaGood.Reach.Parent = DaGood.Player_2
-DaGood.Reach.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.Reach.Parent = DaGood.Player
+DaGood.Reach.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.Reach.BorderSizePixel = 0
 DaGood.Reach.Position = UDim2.new(0.352205783, 0, 0.409230769, 0)
 DaGood.Reach.Size = UDim2.new(0, 94, 0, 46)
@@ -365,23 +361,23 @@ DaGood.Reach.TextSize = 14.000
 DaGood.UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_5.Parent = DaGood.Reach
 
-DaGood.Target.Name = "Target"
-DaGood.Target.Parent = DaGood.Player_2
-DaGood.Target.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
-DaGood.Target.BorderSizePixel = 0
-DaGood.Target.Position = UDim2.new(0.681183517, 0, 0.0399999991, 0)
-DaGood.Target.Size = UDim2.new(0, 94, 0, 46)
-DaGood.Target.Font = Enum.Font.GothamBlack
-DaGood.Target.Text = "Target"
-DaGood.Target.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Target.TextSize = 14.000
+DaGood.Target_2.Name = "Target"
+DaGood.Target_2.Parent = DaGood.Player
+DaGood.Target_2.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
+DaGood.Target_2.BorderSizePixel = 0
+DaGood.Target_2.Position = UDim2.new(0.681183517, 0, 0.0399999991, 0)
+DaGood.Target_2.Size = UDim2.new(0, 94, 0, 46)
+DaGood.Target_2.Font = Enum.Font.GothamBlack
+DaGood.Target_2.Text = "Target"
+DaGood.Target_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Target_2.TextSize = 14.000
 
 DaGood.UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_6.Parent = DaGood.Target
+DaGood.UICorner_6.Parent = DaGood.Target_2
 
 DaGood.View.Name = "View"
-DaGood.View.Parent = DaGood.Player_2
-DaGood.View.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.View.Parent = DaGood.Player
+DaGood.View.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.View.BorderSizePixel = 0
 DaGood.View.Position = UDim2.new(0.680955052, 0, 0.221326202, 0)
 DaGood.View.Size = UDim2.new(0, 94, 0, 46)
@@ -394,8 +390,8 @@ DaGood.UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_7.Parent = DaGood.View
 
 DaGood.Unban.Name = "Unban"
-DaGood.Unban.Parent = DaGood.Player_2
-DaGood.Unban.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.Unban.Parent = DaGood.Player
+DaGood.Unban.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.Unban.BorderSizePixel = 0
 DaGood.Unban.Position = UDim2.new(0.355005682, 0, 0.221326202, 0)
 DaGood.Unban.Size = UDim2.new(0, 94, 0, 46)
@@ -408,8 +404,8 @@ DaGood.UICorner_8.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_8.Parent = DaGood.Unban
 
 DaGood.Fling.Name = "Fling"
-DaGood.Fling.Parent = DaGood.Player_2
-DaGood.Fling.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.Fling.Parent = DaGood.Player
+DaGood.Fling.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.Fling.BorderSizePixel = 0
 DaGood.Fling.Position = UDim2.new(0.352205783, 0, 0.409230769, 0)
 DaGood.Fling.Size = UDim2.new(0, 94, 0, 46)
@@ -422,8 +418,8 @@ DaGood.UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_9.Parent = DaGood.Fling
 
 DaGood.NoClip.Name = "NoClip"
-DaGood.NoClip.Parent = DaGood.Player_2
-DaGood.NoClip.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.NoClip.Parent = DaGood.Player
+DaGood.NoClip.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.NoClip.BorderSizePixel = 0
 DaGood.NoClip.Position = UDim2.new(0.677926719, 0, 0.590557039, 0)
 DaGood.NoClip.Size = UDim2.new(0, 94, 0, 46)
@@ -436,8 +432,8 @@ DaGood.UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_10.Parent = DaGood.NoClip
 
 DaGood.Fly.Name = "Fly"
-DaGood.Fly.Parent = DaGood.Player_2
-DaGood.Fly.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.Fly.Parent = DaGood.Player
+DaGood.Fly.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.Fly.BorderSizePixel = 0
 DaGood.Fly.Position = UDim2.new(0.355234176, 0, 0.0399999991, 0)
 DaGood.Fly.Size = UDim2.new(0, 94, 0, 46)
@@ -1452,27 +1448,6 @@ DaGood.QToTpColor.Text = ""
 DaGood.QToTpColor.TextColor3 = Color3.fromRGB(255, 0, 0)
 DaGood.QToTpColor.TextSize = 14.000
 
-DaGood.HideBlock.Name = "HideBlock"
-DaGood.HideBlock.Parent = DaGood.Toggles
-DaGood.HideBlock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-DaGood.HideBlock.BorderSizePixel = 0
-DaGood.HideBlock.Position = UDim2.new(0.024917312, 0, 0.221326202, 0)
-DaGood.HideBlock.Size = UDim2.new(0, 94, 0, 46)
-DaGood.HideBlock.Font = Enum.Font.GothamBlack
-DaGood.HideBlock.Text = "Hide Block"
-DaGood.HideBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.HideBlock.TextSize = 14.000
-
-DaGood.HideBlockColor.Name = "HideBlockColor"
-DaGood.HideBlockColor.Parent = DaGood.HideBlock
-DaGood.HideBlockColor.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.HideBlockColor.BorderSizePixel = 0
-DaGood.HideBlockColor.Size = UDim2.new(0, 93, 0, 5)
-DaGood.HideBlockColor.Font = Enum.Font.SourceSans
-DaGood.HideBlockColor.Text = ""
-DaGood.HideBlockColor.TextColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.HideBlockColor.TextSize = 14.000
-
 DaGood.HideUser.Name = "HideUser"
 DaGood.HideUser.Parent = DaGood.Toggles
 DaGood.HideUser.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
@@ -1683,27 +1658,6 @@ DaGood.AntiEffectsColor.Text = ""
 DaGood.AntiEffectsColor.TextColor3 = Color3.fromRGB(255, 0, 0)
 DaGood.AntiEffectsColor.TextSize = 14.000
 
-DaGood.AltArmor.Name = "AltArmor"
-DaGood.AltArmor.Parent = DaGood.Toggles
-DaGood.AltArmor.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-DaGood.AltArmor.BorderSizePixel = 0
-DaGood.AltArmor.Position = UDim2.new(0.677926719, 0, 0.590557039, 0)
-DaGood.AltArmor.Size = UDim2.new(0, 94, 0, 46)
-DaGood.AltArmor.Font = Enum.Font.GothamBlack
-DaGood.AltArmor.Text = "Alt Armor"
-DaGood.AltArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.AltArmor.TextSize = 14.000
-
-DaGood.AltArmorColor.Name = "AltArmorColor"
-DaGood.AltArmorColor.Parent = DaGood.AltArmor
-DaGood.AltArmorColor.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.AltArmorColor.BorderSizePixel = 0
-DaGood.AltArmorColor.Size = UDim2.new(0, 93, 0, 5)
-DaGood.AltArmorColor.Font = Enum.Font.SourceSans
-DaGood.AltArmorColor.Text = ""
-DaGood.AltArmorColor.TextColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.AltArmorColor.TextSize = 14.000
-
 DaGood.AntiBag.Name = "AntiBag"
 DaGood.AntiBag.Parent = DaGood.Toggles
 DaGood.AntiBag.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
@@ -1756,14 +1710,9 @@ DaGood.X.Parent = DaGood.Frame
 DaGood.X.AnchorPoint = Vector2.new(0, 0.5)
 DaGood.X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.X.BackgroundTransparency = 1.000
-DaGood.X.Position = UDim2.new(0.0149999997, 0, 0.5, 0)
-DaGood.X.Size = UDim2.new(0, 150, 0, 320)
+DaGood.X.Position = UDim2.new(0, 0, 0.5, 0)
+DaGood.X.Size = UDim2.new(0, 150, 1, 0)
 DaGood.X.ZIndex = 0
-
-DaGood.UIListLayout.Parent = DaGood.X
-DaGood.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-DaGood.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-DaGood.UIListLayout.Padding = UDim.new(0, 6)
 
 DaGood.Title.Name = "Title"
 DaGood.Title.Parent = DaGood.X
@@ -1794,19 +1743,19 @@ DaGood.Home_2.TextSize = 14.000
 DaGood.UICorner_68.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_68.Parent = DaGood.Home_2
 
-DaGood.Player_3.Name = "Player"
-DaGood.Player_3.Parent = DaGood.X
-DaGood.Player_3.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-DaGood.Player_3.BorderSizePixel = 0
-DaGood.Player_3.Position = UDim2.new(0.098662138, 0, 0.184642166, 0)
-DaGood.Player_3.Size = UDim2.new(0, 123, 0, 30)
-DaGood.Player_3.Font = Enum.Font.GothamBlack
-DaGood.Player_3.Text = "Main Scripts"
-DaGood.Player_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Player_3.TextSize = 14.000
+DaGood.Player_2.Name = "Player"
+DaGood.Player_2.Parent = DaGood.X
+DaGood.Player_2.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+DaGood.Player_2.BorderSizePixel = 0
+DaGood.Player_2.Position = UDim2.new(0.098662138, 0, 0.184642166, 0)
+DaGood.Player_2.Size = UDim2.new(0, 123, 0, 30)
+DaGood.Player_2.Font = Enum.Font.GothamBlack
+DaGood.Player_2.Text = "Main Scripts"
+DaGood.Player_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Player_2.TextSize = 14.000
 
 DaGood.UICorner_69.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_69.Parent = DaGood.Player_3
+DaGood.UICorner_69.Parent = DaGood.Player_2
 
 DaGood.SideScripts_2.Name = "SideScripts"
 DaGood.SideScripts_2.Parent = DaGood.X
@@ -1884,16 +1833,22 @@ DaGood.Specs.AnchorPoint = Vector2.new(0, 1)
 DaGood.Specs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Specs.BackgroundTransparency = 1.000
 DaGood.Specs.Position = UDim2.new(0, 0, 1, 0)
-DaGood.Specs.Size = UDim2.new(0, 123, 0, 30)
+DaGood.Specs.Size = UDim2.new(0, 123, 0, 25)
 DaGood.Specs.Font = Enum.Font.GothamBlack
 DaGood.Specs.Text = "FPS: 0"
 DaGood.Specs.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Specs.TextSize = 14.000
 
+DaGood.UIListLayout.Parent = DaGood.X
+DaGood.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+DaGood.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+DaGood.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+DaGood.UIListLayout.Padding = UDim.new(0, 7)
+
 -- Scripts:
 
-local function ULOEO_fake_script() -- DaGood.Player.Client 
-	local script = Instance.new('LocalScript', DaGood.Player)
+local function UBMA_fake_script() -- DaGood.Target.Client 
+	local script = Instance.new('LocalScript', DaGood.Target)
 
 	local textbox = script.Parent.input
 	local icon = script.Parent.icon
@@ -1959,8 +1914,8 @@ local function ULOEO_fake_script() -- DaGood.Player.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(ULOEO_fake_script)()
-local function TJZERQD_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(UBMA_fake_script)()
+local function SOSLUCE_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
@@ -1977,8 +1932,8 @@ local function TJZERQD_fake_script() -- DaGood.goTo.X
 		end
 	end)
 end
-coroutine.wrap(TJZERQD_fake_script)()
-local function DZRU_fake_script() -- DaGood.Reach.X 
+coroutine.wrap(SOSLUCE_fake_script)()
+local function EWEDW_fake_script() -- DaGood.Reach.X 
 	local script = Instance.new('LocalScript', DaGood.Reach)
 
 	local Reach = script.Parent
@@ -1987,7 +1942,7 @@ local function DZRU_fake_script() -- DaGood.Reach.X
 	Reach.MouseButton1Click:Connect(function()
 		if Reach.Text == 'ToolReach' then
 			if player.Character:FindFirstChildWhichIsA('Tool') then
-				player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(9999999,999999,99999999)
+				player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(500,500,500)
 				player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 			else
 				announce('Reach Error', 'you need to be holding a tool', 3)
@@ -2032,9 +1987,9 @@ local function DZRU_fake_script() -- DaGood.Reach.X
 		})
 	end
 end
-coroutine.wrap(DZRU_fake_script)()
-local function KOEYJBL_fake_script() -- DaGood.Target.X 
-	local script = Instance.new('LocalScript', DaGood.Target)
+coroutine.wrap(EWEDW_fake_script)()
+local function SWWOW_fake_script() -- DaGood.Target_2.X 
+	local script = Instance.new('LocalScript', DaGood.Target_2)
 
 	local Target = script.Parent
 	local player = game:GetService('Players').LocalPlayer
@@ -2085,8 +2040,8 @@ local function KOEYJBL_fake_script() -- DaGood.Target.X
 		})
 	end
 end
-coroutine.wrap(KOEYJBL_fake_script)()
-local function SSBU_fake_script() -- DaGood.View.X 
+coroutine.wrap(SWWOW_fake_script)()
+local function RNDOVF_fake_script() -- DaGood.View.X 
 	local script = Instance.new('LocalScript', DaGood.View)
 
 	local View = script.Parent
@@ -2117,8 +2072,8 @@ local function SSBU_fake_script() -- DaGood.View.X
 		end
 	end
 end
-coroutine.wrap(SSBU_fake_script)()
-local function QQVZ_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(RNDOVF_fake_script)()
+local function FWTP_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2127,8 +2082,8 @@ local function QQVZ_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(QQVZ_fake_script)()
-local function VMYBHOD_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(FWTP_fake_script)()
+local function GHUOTY_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2193,8 +2148,8 @@ local function VMYBHOD_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(VMYBHOD_fake_script)()
-local function VJQZOAW_fake_script() -- DaGood.NoClip.X 
+coroutine.wrap(GHUOTY_fake_script)()
+local function CAFVWLY_fake_script() -- DaGood.NoClip.X 
 	local script = Instance.new('LocalScript', DaGood.NoClip)
 
 	local NoClip = script.Parent
@@ -2244,8 +2199,8 @@ local function VJQZOAW_fake_script() -- DaGood.NoClip.X
 		end);	
 	end)
 end
-coroutine.wrap(VJQZOAW_fake_script)()
-local function UHJD_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(CAFVWLY_fake_script)()
+local function JFXZHT_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
@@ -2397,8 +2352,8 @@ local function UHJD_fake_script() -- DaGood.Fly.X
 		end)
 	end)
 end
-coroutine.wrap(UHJD_fake_script)()
-local function NBXLE_fake_script() -- DaGood.DropDown.X 
+coroutine.wrap(JFXZHT_fake_script)()
+local function RZHA_fake_script() -- DaGood.DropDown.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2421,8 +2376,8 @@ local function NBXLE_fake_script() -- DaGood.DropDown.X
 		end
 	end)
 end
-coroutine.wrap(NBXLE_fake_script)()
-local function DASWLHL_fake_script() -- DaGood.PlayersImage.X 
+coroutine.wrap(RZHA_fake_script)()
+local function DNAUIGO_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -2430,15 +2385,15 @@ local function DASWLHL_fake_script() -- DaGood.PlayersImage.X
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(DASWLHL_fake_script)()
-local function XZWDLOY_fake_script() -- DaGood.QToTp.X 
+coroutine.wrap(DNAUIGO_fake_script)()
+local function BMWEMWS_fake_script() -- DaGood.QToTp.X 
 	local script = Instance.new('LocalScript', DaGood.QToTp)
 
 	print("Hello world!")
 	
 end
-coroutine.wrap(XZWDLOY_fake_script)()
-local function BGEBNJO_fake_script() -- DaGood.CashAura.X 
+coroutine.wrap(BMWEMWS_fake_script)()
+local function ICPDQQ_fake_script() -- DaGood.CashAura.X 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2472,8 +2427,8 @@ local function BGEBNJO_fake_script() -- DaGood.CashAura.X
 		end
 	end)
 end
-coroutine.wrap(BGEBNJO_fake_script)()
-local function SCIHUWC_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(ICPDQQ_fake_script)()
+local function GEGJT_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2540,8 +2495,8 @@ local function SCIHUWC_fake_script() -- DaGood.Frame.Client
 	
 	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(SCIHUWC_fake_script)()
-local function WZQW_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(GEGJT_fake_script)()
+local function EJHYCY_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2551,4 +2506,4 @@ local function WZQW_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(WZQW_fake_script)()
+coroutine.wrap(EJHYCY_fake_script)()
