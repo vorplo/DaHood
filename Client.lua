@@ -213,7 +213,7 @@ local DaGood = {
 --Properties:
 
 DaGood.DaGood.Name = "DaGood"
-DaGood.DaGood.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DaGood.DaGood.Parent = game:GetService('CoreGui')
 DaGood.DaGood.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 DaGood.Frame.Parent = DaGood.DaGood
