@@ -277,7 +277,7 @@ DaGood.bountyLabel.BorderSizePixel = 0
 DaGood.bountyLabel.Position = UDim2.new(0.5, 0, 0.629999995, 0)
 DaGood.bountyLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.bountyLabel.Font = Enum.Font.Gotham
-DaGood.bountyLabel.Text = "Bounty: 123123"
+DaGood.bountyLabel.Text = "Bounty:"
 DaGood.bountyLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.bountyLabel.TextSize = 14.000
 
@@ -290,7 +290,7 @@ DaGood.crewLabel.BorderSizePixel = 0
 DaGood.crewLabel.Position = UDim2.new(0.5, 0, 0.736999989, 0)
 DaGood.crewLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.crewLabel.Font = Enum.Font.Gotham
-DaGood.crewLabel.Text = "Crew: 123123"
+DaGood.crewLabel.Text = "Crew:"
 DaGood.crewLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.crewLabel.TextSize = 14.000
 DaGood.crewLabel.TextWrapped = true
@@ -320,7 +320,7 @@ DaGood.cashLabel.BorderSizePixel = 0
 DaGood.cashLabel.Position = UDim2.new(0.5, 0, 0.519999981, 0)
 DaGood.cashLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.cashLabel.Font = Enum.Font.Gotham
-DaGood.cashLabel.Text = "Cash: 123123"
+DaGood.cashLabel.Text = "Cash:"
 DaGood.cashLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.cashLabel.TextSize = 14.000
 DaGood.cashLabel.TextWrapped = true
@@ -1847,7 +1847,7 @@ DaGood.UIListLayout.Padding = UDim.new(0, 7)
 
 -- Scripts:
 
-local function UBMA_fake_script() -- DaGood.Target.Client 
+local function NYQHX_fake_script() -- DaGood.Target.Client 
 	local script = Instance.new('LocalScript', DaGood.Target)
 
 	local textbox = script.Parent.input
@@ -1914,26 +1914,24 @@ local function UBMA_fake_script() -- DaGood.Target.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(UBMA_fake_script)()
-local function SOSLUCE_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(NYQHX_fake_script)()
+local function DEFDA_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
 	local input = script.Parent.Parent.input
-	
-	local hover = false
 	
 	button.MouseButton1Click:Connect(function()
 		if game.Players:FindFirstChild(input.Text) then
 			local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local target = game.Players:FindFirstChild(input.Text).Character.HumanoidRootPart
 			
-			player.CFrame = target.CFrame
+			player.Position = target.Position - Vector3.new(0,5,0)
 		end
 	end)
 end
-coroutine.wrap(SOSLUCE_fake_script)()
-local function EWEDW_fake_script() -- DaGood.Reach.X 
+coroutine.wrap(DEFDA_fake_script)()
+local function UNQGZ_fake_script() -- DaGood.Reach.X 
 	local script = Instance.new('LocalScript', DaGood.Reach)
 
 	local Reach = script.Parent
@@ -1987,8 +1985,8 @@ local function EWEDW_fake_script() -- DaGood.Reach.X
 		})
 	end
 end
-coroutine.wrap(EWEDW_fake_script)()
-local function SWWOW_fake_script() -- DaGood.Target_2.X 
+coroutine.wrap(UNQGZ_fake_script)()
+local function TGBD_fake_script() -- DaGood.Target_2.X 
 	local script = Instance.new('LocalScript', DaGood.Target_2)
 
 	local Target = script.Parent
@@ -2040,8 +2038,8 @@ local function SWWOW_fake_script() -- DaGood.Target_2.X
 		})
 	end
 end
-coroutine.wrap(SWWOW_fake_script)()
-local function RNDOVF_fake_script() -- DaGood.View.X 
+coroutine.wrap(TGBD_fake_script)()
+local function YYFSUEU_fake_script() -- DaGood.View.X 
 	local script = Instance.new('LocalScript', DaGood.View)
 
 	local View = script.Parent
@@ -2072,8 +2070,8 @@ local function RNDOVF_fake_script() -- DaGood.View.X
 		end
 	end
 end
-coroutine.wrap(RNDOVF_fake_script)()
-local function FWTP_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(YYFSUEU_fake_script)()
+local function VRETIE_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2082,8 +2080,8 @@ local function FWTP_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(FWTP_fake_script)()
-local function GHUOTY_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(VRETIE_fake_script)()
+local function SBYT_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2148,8 +2146,8 @@ local function GHUOTY_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(GHUOTY_fake_script)()
-local function CAFVWLY_fake_script() -- DaGood.NoClip.X 
+coroutine.wrap(SBYT_fake_script)()
+local function PKXNL_fake_script() -- DaGood.NoClip.X 
 	local script = Instance.new('LocalScript', DaGood.NoClip)
 
 	local NoClip = script.Parent
@@ -2199,8 +2197,8 @@ local function CAFVWLY_fake_script() -- DaGood.NoClip.X
 		end);	
 	end)
 end
-coroutine.wrap(CAFVWLY_fake_script)()
-local function JFXZHT_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(PKXNL_fake_script)()
+local function HFVX_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
@@ -2352,8 +2350,8 @@ local function JFXZHT_fake_script() -- DaGood.Fly.X
 		end)
 	end)
 end
-coroutine.wrap(JFXZHT_fake_script)()
-local function RZHA_fake_script() -- DaGood.DropDown.X 
+coroutine.wrap(HFVX_fake_script)()
+local function YUQY_fake_script() -- DaGood.DropDown.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2376,8 +2374,8 @@ local function RZHA_fake_script() -- DaGood.DropDown.X
 		end
 	end)
 end
-coroutine.wrap(RZHA_fake_script)()
-local function DNAUIGO_fake_script() -- DaGood.PlayersImage.X 
+coroutine.wrap(YUQY_fake_script)()
+local function HFQQ_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -2385,15 +2383,15 @@ local function DNAUIGO_fake_script() -- DaGood.PlayersImage.X
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(DNAUIGO_fake_script)()
-local function BMWEMWS_fake_script() -- DaGood.QToTp.X 
+coroutine.wrap(HFQQ_fake_script)()
+local function MLWRP_fake_script() -- DaGood.QToTp.X 
 	local script = Instance.new('LocalScript', DaGood.QToTp)
 
 	print("Hello world!")
 	
 end
-coroutine.wrap(BMWEMWS_fake_script)()
-local function ICPDQQ_fake_script() -- DaGood.CashAura.X 
+coroutine.wrap(MLWRP_fake_script)()
+local function HIBQT_fake_script() -- DaGood.CashAura.X 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2427,8 +2425,8 @@ local function ICPDQQ_fake_script() -- DaGood.CashAura.X
 		end
 	end)
 end
-coroutine.wrap(ICPDQQ_fake_script)()
-local function GEGJT_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(HIBQT_fake_script)()
+local function LOUXUT_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2495,8 +2493,8 @@ local function GEGJT_fake_script() -- DaGood.Frame.Client
 	
 	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(GEGJT_fake_script)()
-local function EJHYCY_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(LOUXUT_fake_script)()
+local function UCDU_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2506,4 +2504,4 @@ local function EJHYCY_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(EJHYCY_fake_script)()
+coroutine.wrap(UCDU_fake_script)()
