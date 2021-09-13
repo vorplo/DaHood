@@ -196,23 +196,23 @@ local DaGood = {
 	AntiSlowColor = Instance.new("TextLabel"),
 	UIGridLayout_5 = Instance.new("UIGridLayout"),
 	X = Instance.new("Frame"),
+	UIListLayout = Instance.new("UIListLayout"),
+	Title = Instance.new("TextLabel"),
 	Home_2 = Instance.new("TextButton"),
 	UICorner_68 = Instance.new("UICorner"),
 	Player_2 = Instance.new("TextButton"),
 	UICorner_69 = Instance.new("UICorner"),
 	SideScripts_2 = Instance.new("TextButton"),
 	UICorner_70 = Instance.new("UICorner"),
-	QuickBuy_2 = Instance.new("TextButton"),
-	UICorner_71 = Instance.new("UICorner"),
-	QuickTp_2 = Instance.new("TextButton"),
-	UICorner_72 = Instance.new("UICorner"),
-	SellingTools_2 = Instance.new("TextButton"),
-	UICorner_73 = Instance.new("UICorner"),
-	Specs = Instance.new("TextLabel"),
-	UIListLayout = Instance.new("UIListLayout"),
 	Toggles_2 = Instance.new("TextButton"),
+	UICorner_71 = Instance.new("UICorner"),
+	QuickBuy_2 = Instance.new("TextButton"),
+	UICorner_72 = Instance.new("UICorner"),
+	QuickTp_2 = Instance.new("TextButton"),
+	UICorner_73 = Instance.new("UICorner"),
+	SellingTools_2 = Instance.new("TextButton"),
 	UICorner_74 = Instance.new("UICorner"),
-	Title = Instance.new("TextLabel"),
+	Specs = Instance.new("TextLabel"),
 }
 
 --Properties:
@@ -282,7 +282,7 @@ DaGood.bountyLabel.BorderSizePixel = 0
 DaGood.bountyLabel.Position = UDim2.new(0.5, 0, 0.629999995, 0)
 DaGood.bountyLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.bountyLabel.Font = Enum.Font.Gotham
-DaGood.bountyLabel.Text = "Bounty: 123123"
+DaGood.bountyLabel.Text = "Bounty:"
 DaGood.bountyLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.bountyLabel.TextSize = 14.000
 
@@ -295,7 +295,7 @@ DaGood.crewLabel.BorderSizePixel = 0
 DaGood.crewLabel.Position = UDim2.new(0.5, 0, 0.736999989, 0)
 DaGood.crewLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.crewLabel.Font = Enum.Font.Gotham
-DaGood.crewLabel.Text = "Crew: 123123"
+DaGood.crewLabel.Text = "Crew:"
 DaGood.crewLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.crewLabel.TextSize = 14.000
 DaGood.crewLabel.TextWrapped = true
@@ -325,7 +325,7 @@ DaGood.cashLabel.BorderSizePixel = 0
 DaGood.cashLabel.Position = UDim2.new(0.5, 0, 0.519999981, 0)
 DaGood.cashLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.cashLabel.Font = Enum.Font.Gotham
-DaGood.cashLabel.Text = "Cash: 123123"
+DaGood.cashLabel.Text = "Cash:"
 DaGood.cashLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.cashLabel.TextSize = 14.000
 DaGood.cashLabel.TextWrapped = true
@@ -1719,6 +1719,27 @@ DaGood.X.Position = UDim2.new(0, 0, 0.5, 0)
 DaGood.X.Size = UDim2.new(0, 150, 1, 0)
 DaGood.X.ZIndex = 0
 
+DaGood.UIListLayout.Parent = DaGood.X
+DaGood.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+DaGood.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+DaGood.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+DaGood.UIListLayout.Padding = UDim.new(0, 7)
+
+DaGood.Title.Name = "Title"
+DaGood.Title.Parent = DaGood.X
+DaGood.Title.Active = true
+DaGood.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Title.BackgroundTransparency = 1.000
+DaGood.Title.BorderSizePixel = 0
+DaGood.Title.Position = UDim2.new(0.0149999997, 0, 0.435000002, 0)
+DaGood.Title.Size = UDim2.new(0.800000012, 0, 0.100000001, 0)
+DaGood.Title.Font = Enum.Font.GothamBlack
+DaGood.Title.Text = "Da Good"
+DaGood.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Title.TextSize = 25.000
+DaGood.Title.TextWrapped = true
+DaGood.Title.TextXAlignment = Enum.TextXAlignment.Left
+
 DaGood.Home_2.Name = "Home"
 DaGood.Home_2.Parent = DaGood.X
 DaGood.Home_2.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
@@ -1761,6 +1782,20 @@ DaGood.SideScripts_2.TextSize = 14.000
 DaGood.UICorner_70.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_70.Parent = DaGood.SideScripts_2
 
+DaGood.Toggles_2.Name = "Toggles"
+DaGood.Toggles_2.Parent = DaGood.X
+DaGood.Toggles_2.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+DaGood.Toggles_2.BorderSizePixel = 0
+DaGood.Toggles_2.Position = UDim2.new(0.0147911683, 0, 0.452530444, 0)
+DaGood.Toggles_2.Size = UDim2.new(0, 123, 0, 30)
+DaGood.Toggles_2.Font = Enum.Font.GothamBlack
+DaGood.Toggles_2.Text = "Toggles"
+DaGood.Toggles_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Toggles_2.TextSize = 14.000
+
+DaGood.UICorner_71.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_71.Parent = DaGood.Toggles_2
+
 DaGood.QuickBuy_2.Name = "QuickBuy"
 DaGood.QuickBuy_2.Parent = DaGood.X
 DaGood.QuickBuy_2.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
@@ -1772,8 +1807,8 @@ DaGood.QuickBuy_2.Text = "Quick Buy"
 DaGood.QuickBuy_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.QuickBuy_2.TextSize = 14.000
 
-DaGood.UICorner_71.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_71.Parent = DaGood.QuickBuy_2
+DaGood.UICorner_72.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_72.Parent = DaGood.QuickBuy_2
 
 DaGood.QuickTp_2.Name = "QuickTp"
 DaGood.QuickTp_2.Parent = DaGood.X
@@ -1786,8 +1821,8 @@ DaGood.QuickTp_2.Text = "Quick TP"
 DaGood.QuickTp_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.QuickTp_2.TextSize = 14.000
 
-DaGood.UICorner_72.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_72.Parent = DaGood.QuickTp_2
+DaGood.UICorner_73.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_73.Parent = DaGood.QuickTp_2
 
 DaGood.SellingTools_2.Name = "SellingTools"
 DaGood.SellingTools_2.Parent = DaGood.X
@@ -1800,8 +1835,8 @@ DaGood.SellingTools_2.Text = "Selling Tools"
 DaGood.SellingTools_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SellingTools_2.TextSize = 14.000
 
-DaGood.UICorner_73.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_73.Parent = DaGood.SellingTools_2
+DaGood.UICorner_74.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_74.Parent = DaGood.SellingTools_2
 
 DaGood.Specs.Name = "Specs"
 DaGood.Specs.Parent = DaGood.X
@@ -1815,44 +1850,9 @@ DaGood.Specs.Text = "FPS: 0"
 DaGood.Specs.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Specs.TextSize = 14.000
 
-DaGood.UIListLayout.Parent = DaGood.X
-DaGood.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-DaGood.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-DaGood.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-DaGood.UIListLayout.Padding = UDim.new(0, 7)
-
-DaGood.Toggles_2.Name = "Toggles"
-DaGood.Toggles_2.Parent = DaGood.X
-DaGood.Toggles_2.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-DaGood.Toggles_2.BorderSizePixel = 0
-DaGood.Toggles_2.Position = UDim2.new(0.0147911683, 0, 0.452530444, 0)
-DaGood.Toggles_2.Size = UDim2.new(0, 123, 0, 30)
-DaGood.Toggles_2.Font = Enum.Font.GothamBlack
-DaGood.Toggles_2.Text = "Toggles"
-DaGood.Toggles_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Toggles_2.TextSize = 14.000
-
-DaGood.UICorner_74.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_74.Parent = DaGood.Toggles_2
-
-DaGood.Title.Name = "Title"
-DaGood.Title.Parent = DaGood.X
-DaGood.Title.Active = true
-DaGood.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Title.BackgroundTransparency = 1.000
-DaGood.Title.BorderSizePixel = 0
-DaGood.Title.Position = UDim2.new(0.0149999997, 0, 0.435000002, 0)
-DaGood.Title.Size = UDim2.new(0.800000012, 0, 0.100000001, 0)
-DaGood.Title.Font = Enum.Font.GothamBlack
-DaGood.Title.Text = "Da Good"
-DaGood.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Title.TextSize = 25.000
-DaGood.Title.TextWrapped = true
-DaGood.Title.TextXAlignment = Enum.TextXAlignment.Left
-
 -- Scripts:
 
-local function PBWAP_fake_script() -- DaGood.Target.Client 
+local function GPZY_fake_script() -- DaGood.Target.Client 
 	local script = Instance.new('LocalScript', DaGood.Target)
 
 	local textbox = script.Parent.input
@@ -1919,8 +1919,8 @@ local function PBWAP_fake_script() -- DaGood.Target.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(PBWAP_fake_script)()
-local function JLYYXBE_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(GPZY_fake_script)()
+local function PQJU_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
@@ -1935,8 +1935,8 @@ local function JLYYXBE_fake_script() -- DaGood.goTo.X
 		end
 	end)
 end
-coroutine.wrap(JLYYXBE_fake_script)()
-local function YZSRDF_fake_script() -- DaGood.Reach.X 
+coroutine.wrap(PQJU_fake_script)()
+local function STWRBP_fake_script() -- DaGood.Reach.X 
 	local script = Instance.new('LocalScript', DaGood.Reach)
 
 	local Reach = script.Parent
@@ -1990,8 +1990,8 @@ local function YZSRDF_fake_script() -- DaGood.Reach.X
 		})
 	end
 end
-coroutine.wrap(YZSRDF_fake_script)()
-local function NAFUWI_fake_script() -- DaGood.Target_2.X 
+coroutine.wrap(STWRBP_fake_script)()
+local function HPFMSJ_fake_script() -- DaGood.Target_2.X 
 	local script = Instance.new('LocalScript', DaGood.Target_2)
 
 	local Target = script.Parent
@@ -2043,8 +2043,8 @@ local function NAFUWI_fake_script() -- DaGood.Target_2.X
 		})
 	end
 end
-coroutine.wrap(NAFUWI_fake_script)()
-local function XXEX_fake_script() -- DaGood.View.X 
+coroutine.wrap(HPFMSJ_fake_script)()
+local function OEBUJLB_fake_script() -- DaGood.View.X 
 	local script = Instance.new('LocalScript', DaGood.View)
 
 	local View = script.Parent
@@ -2075,8 +2075,8 @@ local function XXEX_fake_script() -- DaGood.View.X
 		end
 	end
 end
-coroutine.wrap(XXEX_fake_script)()
-local function KTGDAS_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(OEBUJLB_fake_script)()
+local function WKMJ_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2085,8 +2085,8 @@ local function KTGDAS_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(KTGDAS_fake_script)()
-local function DMDNI_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(WKMJ_fake_script)()
+local function EMLGUPF_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2151,8 +2151,8 @@ local function DMDNI_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(DMDNI_fake_script)()
-local function DNVGWV_fake_script() -- DaGood.NoClip.X 
+coroutine.wrap(EMLGUPF_fake_script)()
+local function FVZRL_fake_script() -- DaGood.NoClip.X 
 	local script = Instance.new('LocalScript', DaGood.NoClip)
 
 	local NoClip = script.Parent
@@ -2202,8 +2202,8 @@ local function DNVGWV_fake_script() -- DaGood.NoClip.X
 		end);	
 	end)
 end
-coroutine.wrap(DNVGWV_fake_script)()
-local function VNKPT_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(FVZRL_fake_script)()
+local function FCRCHV_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
@@ -2355,8 +2355,8 @@ local function VNKPT_fake_script() -- DaGood.Fly.X
 		end)
 	end)
 end
-coroutine.wrap(VNKPT_fake_script)()
-local function KVFW_fake_script() -- DaGood.DropDown.X 
+coroutine.wrap(FCRCHV_fake_script)()
+local function OUOTMH_fake_script() -- DaGood.DropDown.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2379,8 +2379,8 @@ local function KVFW_fake_script() -- DaGood.DropDown.X
 		end
 	end)
 end
-coroutine.wrap(KVFW_fake_script)()
-local function HMVEKI_fake_script() -- DaGood.PlayersImage.X 
+coroutine.wrap(OUOTMH_fake_script)()
+local function LCTGIH_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -2388,14 +2388,14 @@ local function HMVEKI_fake_script() -- DaGood.PlayersImage.X
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(HMVEKI_fake_script)()
-local function MFFI_fake_script() -- DaGood.QToTp.X 
+coroutine.wrap(LCTGIH_fake_script)()
+local function BYTK_fake_script() -- DaGood.QToTp.X 
 	local script = Instance.new('LocalScript', DaGood.QToTp)
 
 	
 end
-coroutine.wrap(MFFI_fake_script)()
-local function XDKD_fake_script() -- DaGood.CashAura.X 
+coroutine.wrap(BYTK_fake_script)()
+local function WKAVLFY_fake_script() -- DaGood.CashAura.X 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2429,8 +2429,8 @@ local function XDKD_fake_script() -- DaGood.CashAura.X
 		end
 	end)
 end
-coroutine.wrap(XDKD_fake_script)()
-local function ZVJYQX_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(WKAVLFY_fake_script)()
+local function FHLGEOO_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2497,8 +2497,8 @@ local function ZVJYQX_fake_script() -- DaGood.Frame.Client
 	
 	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(ZVJYQX_fake_script)()
-local function JIPBW_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(FHLGEOO_fake_script)()
+local function MZGAYN_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2508,4 +2508,4 @@ local function JIPBW_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(JIPBW_fake_script)()
+coroutine.wrap(MZGAYN_fake_script)()
