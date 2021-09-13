@@ -1852,7 +1852,7 @@ DaGood.Specs.TextSize = 14.000
 
 -- Scripts:
 
-local function GPZY_fake_script() -- DaGood.Target.Client 
+local function NCCABPK_fake_script() -- DaGood.Target.Client 
 	local script = Instance.new('LocalScript', DaGood.Target)
 
 	local textbox = script.Parent.input
@@ -1919,8 +1919,8 @@ local function GPZY_fake_script() -- DaGood.Target.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(GPZY_fake_script)()
-local function PQJU_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(NCCABPK_fake_script)()
+local function NBXB_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
@@ -1931,12 +1931,12 @@ local function PQJU_fake_script() -- DaGood.goTo.X
 			local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local target = game.Players:FindFirstChild(input.Text).Character.HumanoidRootPart
 			
-			player.Position = target.Position - Vector3.new(0,5,0)
+			player.Position = target.Position + 5
 		end
 	end)
 end
-coroutine.wrap(PQJU_fake_script)()
-local function STWRBP_fake_script() -- DaGood.Reach.X 
+coroutine.wrap(NBXB_fake_script)()
+local function MOGPE_fake_script() -- DaGood.Reach.X 
 	local script = Instance.new('LocalScript', DaGood.Reach)
 
 	local Reach = script.Parent
@@ -1990,8 +1990,8 @@ local function STWRBP_fake_script() -- DaGood.Reach.X
 		})
 	end
 end
-coroutine.wrap(STWRBP_fake_script)()
-local function HPFMSJ_fake_script() -- DaGood.Target_2.X 
+coroutine.wrap(MOGPE_fake_script)()
+local function LFQP_fake_script() -- DaGood.Target_2.X 
 	local script = Instance.new('LocalScript', DaGood.Target_2)
 
 	local Target = script.Parent
@@ -2043,8 +2043,8 @@ local function HPFMSJ_fake_script() -- DaGood.Target_2.X
 		})
 	end
 end
-coroutine.wrap(HPFMSJ_fake_script)()
-local function OEBUJLB_fake_script() -- DaGood.View.X 
+coroutine.wrap(LFQP_fake_script)()
+local function LGPTYT_fake_script() -- DaGood.View.X 
 	local script = Instance.new('LocalScript', DaGood.View)
 
 	local View = script.Parent
@@ -2075,8 +2075,8 @@ local function OEBUJLB_fake_script() -- DaGood.View.X
 		end
 	end
 end
-coroutine.wrap(OEBUJLB_fake_script)()
-local function WKMJ_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(LGPTYT_fake_script)()
+local function BUKBCH_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2085,8 +2085,8 @@ local function WKMJ_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(WKMJ_fake_script)()
-local function EMLGUPF_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(BUKBCH_fake_script)()
+local function NRKTKL_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2151,8 +2151,8 @@ local function EMLGUPF_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(EMLGUPF_fake_script)()
-local function FVZRL_fake_script() -- DaGood.NoClip.X 
+coroutine.wrap(NRKTKL_fake_script)()
+local function EWCT_fake_script() -- DaGood.NoClip.X 
 	local script = Instance.new('LocalScript', DaGood.NoClip)
 
 	local NoClip = script.Parent
@@ -2202,8 +2202,8 @@ local function FVZRL_fake_script() -- DaGood.NoClip.X
 		end);	
 	end)
 end
-coroutine.wrap(FVZRL_fake_script)()
-local function FCRCHV_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(EWCT_fake_script)()
+local function ORMQUN_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
@@ -2355,8 +2355,8 @@ local function FCRCHV_fake_script() -- DaGood.Fly.X
 		end)
 	end)
 end
-coroutine.wrap(FCRCHV_fake_script)()
-local function OUOTMH_fake_script() -- DaGood.DropDown.X 
+coroutine.wrap(ORMQUN_fake_script)()
+local function ZBFIZR_fake_script() -- DaGood.DropDown.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2379,8 +2379,8 @@ local function OUOTMH_fake_script() -- DaGood.DropDown.X
 		end
 	end)
 end
-coroutine.wrap(OUOTMH_fake_script)()
-local function LCTGIH_fake_script() -- DaGood.PlayersImage.X 
+coroutine.wrap(ZBFIZR_fake_script)()
+local function TIIG_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -2388,14 +2388,14 @@ local function LCTGIH_fake_script() -- DaGood.PlayersImage.X
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(LCTGIH_fake_script)()
-local function BYTK_fake_script() -- DaGood.QToTp.X 
+coroutine.wrap(TIIG_fake_script)()
+local function LLAMEFV_fake_script() -- DaGood.QToTp.X 
 	local script = Instance.new('LocalScript', DaGood.QToTp)
 
 	
 end
-coroutine.wrap(BYTK_fake_script)()
-local function WKAVLFY_fake_script() -- DaGood.CashAura.X 
+coroutine.wrap(LLAMEFV_fake_script)()
+local function FSMPOZ_fake_script() -- DaGood.CashAura.X 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2429,8 +2429,8 @@ local function WKAVLFY_fake_script() -- DaGood.CashAura.X
 		end
 	end)
 end
-coroutine.wrap(WKAVLFY_fake_script)()
-local function FHLGEOO_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(FSMPOZ_fake_script)()
+local function QNZGSHF_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2497,8 +2497,8 @@ local function FHLGEOO_fake_script() -- DaGood.Frame.Client
 	
 	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(FHLGEOO_fake_script)()
-local function MZGAYN_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(QNZGSHF_fake_script)()
+local function SWYE_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2508,4 +2508,4 @@ local function MZGAYN_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(MZGAYN_fake_script)()
+coroutine.wrap(SWYE_fake_script)()
