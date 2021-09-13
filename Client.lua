@@ -7,7 +7,7 @@ local DaGood = {
 	DaGood = Instance.new("ScreenGui"),
 	Frame = Instance.new("Frame"),
 	UICorner = Instance.new("UICorner"),
-	Player = Instance.new("Frame"),
+	Target = Instance.new("Frame"),
 	icon = Instance.new("ImageLabel"),
 	UICorner_2 = Instance.new("UICorner"),
 	input = Instance.new("TextBox"),
@@ -17,109 +17,114 @@ local DaGood = {
 	goTo = Instance.new("TextButton"),
 	UICorner_3 = Instance.new("UICorner"),
 	cashLabel = Instance.new("TextLabel"),
-	Y = Instance.new("Frame"),
-	Player_2 = Instance.new("Frame"),
-	FreeFists = Instance.new("TextButton"),
 	UICorner_4 = Instance.new("UICorner"),
-	Fling = Instance.new("TextButton"),
+	Y = Instance.new("Frame"),
+	Player = Instance.new("Frame"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	Reach = Instance.new("TextButton"),
 	UICorner_5 = Instance.new("UICorner"),
-	Unban = Instance.new("TextButton"),
+	Target_2 = Instance.new("TextButton"),
 	UICorner_6 = Instance.new("UICorner"),
 	View = Instance.new("TextButton"),
 	UICorner_7 = Instance.new("UICorner"),
-	Target = Instance.new("TextButton"),
+	Unban = Instance.new("TextButton"),
 	UICorner_8 = Instance.new("UICorner"),
-	Fly = Instance.new("TextButton"),
+	Fling = Instance.new("TextButton"),
 	UICorner_9 = Instance.new("UICorner"),
 	NoClip = Instance.new("TextButton"),
 	UICorner_10 = Instance.new("UICorner"),
-	UIGridLayout = Instance.new("UIGridLayout"),
+	Fly = Instance.new("TextButton"),
+	UICorner_11 = Instance.new("UICorner"),
+	Input = Instance.new("TextBox"),
+	UICorner_12 = Instance.new("UICorner"),
+	DropDown = Instance.new("ImageButton"),
 	Home = Instance.new("Frame"),
 	Welcome = Instance.new("TextLabel"),
 	PlayersImage = Instance.new("ImageLabel"),
+	UICorner_13 = Instance.new("UICorner"),
 	Username = Instance.new("TextLabel"),
 	Rank = Instance.new("TextLabel"),
 	QuickBuy = Instance.new("Frame"),
 	TacShotgun = Instance.new("TextButton"),
-	UICorner_11 = Instance.new("UICorner"),
-	AUG = Instance.new("TextButton"),
-	UICorner_12 = Instance.new("UICorner"),
-	Flamethrower = Instance.new("TextButton"),
-	UICorner_13 = Instance.new("UICorner"),
-	DBShotgun = Instance.new("TextButton"),
 	UICorner_14 = Instance.new("UICorner"),
-	AK47 = Instance.new("TextButton"),
+	AUG = Instance.new("TextButton"),
 	UICorner_15 = Instance.new("UICorner"),
-	Drumgun = Instance.new("TextButton"),
+	Flamethrower = Instance.new("TextButton"),
 	UICorner_16 = Instance.new("UICorner"),
-	Flashbang = Instance.new("TextButton"),
+	DBShotgun = Instance.new("TextButton"),
 	UICorner_17 = Instance.new("UICorner"),
-	Revolver = Instance.new("TextButton"),
+	AK47 = Instance.new("TextButton"),
 	UICorner_18 = Instance.new("UICorner"),
-	Shotgun = Instance.new("TextButton"),
+	Drumgun = Instance.new("TextButton"),
 	UICorner_19 = Instance.new("UICorner"),
-	SIlencer = Instance.new("TextButton"),
+	Flashbang = Instance.new("TextButton"),
 	UICorner_20 = Instance.new("UICorner"),
-	NadeLauncher = Instance.new("TextButton"),
+	Revolver = Instance.new("TextButton"),
 	UICorner_21 = Instance.new("UICorner"),
-	AR = Instance.new("TextButton"),
+	Shotgun = Instance.new("TextButton"),
 	UICorner_22 = Instance.new("UICorner"),
-	Knife = Instance.new("TextButton"),
+	SIlencer = Instance.new("TextButton"),
 	UICorner_23 = Instance.new("UICorner"),
-	RPG = Instance.new("TextButton"),
+	NadeLauncher = Instance.new("TextButton"),
 	UICorner_24 = Instance.new("UICorner"),
-	Glock = Instance.new("TextButton"),
+	AR = Instance.new("TextButton"),
 	UICorner_25 = Instance.new("UICorner"),
+	Knife = Instance.new("TextButton"),
+	UICorner_26 = Instance.new("UICorner"),
+	RPG = Instance.new("TextButton"),
+	UICorner_27 = Instance.new("UICorner"),
+	Glock = Instance.new("TextButton"),
+	UICorner_28 = Instance.new("UICorner"),
 	UIGridLayout_2 = Instance.new("UIGridLayout"),
 	SilencedAR = Instance.new("TextButton"),
-	UICorner_26 = Instance.new("UICorner"),
-	Hammer = Instance.new("TextButton"),
-	UICorner_27 = Instance.new("UICorner"),
-	Pencil = Instance.new("TextButton"),
-	UICorner_28 = Instance.new("UICorner"),
-	Bat = Instance.new("TextButton"),
 	UICorner_29 = Instance.new("UICorner"),
-	Armor = Instance.new("TextButton"),
+	Hammer = Instance.new("TextButton"),
 	UICorner_30 = Instance.new("UICorner"),
-	HeavyArmor = Instance.new("TextButton"),
+	Pencil = Instance.new("TextButton"),
 	UICorner_31 = Instance.new("UICorner"),
-	Food = Instance.new("TextButton"),
+	Bat = Instance.new("TextButton"),
 	UICorner_32 = Instance.new("UICorner"),
-	Grenade = Instance.new("TextButton"),
+	Armor = Instance.new("TextButton"),
 	UICorner_33 = Instance.new("UICorner"),
-	Mask = Instance.new("TextButton"),
+	HeavyArmor = Instance.new("TextButton"),
 	UICorner_34 = Instance.new("UICorner"),
+	Food = Instance.new("TextButton"),
+	UICorner_35 = Instance.new("UICorner"),
+	Grenade = Instance.new("TextButton"),
+	UICorner_36 = Instance.new("UICorner"),
+	Mask = Instance.new("TextButton"),
+	UICorner_37 = Instance.new("UICorner"),
 	QuickTp = Instance.new("Frame"),
 	GunShop2 = Instance.new("TextButton"),
-	UICorner_35 = Instance.new("UICorner"),
-	PrevPosition = Instance.new("TextButton"),
-	UICorner_36 = Instance.new("UICorner"),
-	Bank = Instance.new("TextButton"),
-	UICorner_37 = Instance.new("UICorner"),
-	SafeZone1 = Instance.new("TextButton"),
 	UICorner_38 = Instance.new("UICorner"),
-	SetSpawn = Instance.new("TextButton"),
+	PrevPosition = Instance.new("TextButton"),
 	UICorner_39 = Instance.new("UICorner"),
-	Sewer = Instance.new("TextButton"),
+	Bank = Instance.new("TextButton"),
 	UICorner_40 = Instance.new("UICorner"),
-	Playground = Instance.new("TextButton"),
+	SafeZone1 = Instance.new("TextButton"),
 	UICorner_41 = Instance.new("UICorner"),
-	GasStation = Instance.new("TextButton"),
+	SetSpawn = Instance.new("TextButton"),
 	UICorner_42 = Instance.new("UICorner"),
-	LavaBase = Instance.new("TextButton"),
+	Sewer = Instance.new("TextButton"),
 	UICorner_43 = Instance.new("UICorner"),
-	SavePos = Instance.new("TextButton"),
+	Playground = Instance.new("TextButton"),
 	UICorner_44 = Instance.new("UICorner"),
-	SafeZone2 = Instance.new("TextButton"),
+	GasStation = Instance.new("TextButton"),
 	UICorner_45 = Instance.new("UICorner"),
-	UFO = Instance.new("TextButton"),
+	LavaBase = Instance.new("TextButton"),
 	UICorner_46 = Instance.new("UICorner"),
-	TacoShop = Instance.new("TextButton"),
+	SavePos = Instance.new("TextButton"),
 	UICorner_47 = Instance.new("UICorner"),
-	LoadPos = Instance.new("TextButton"),
+	SafeZone2 = Instance.new("TextButton"),
 	UICorner_48 = Instance.new("UICorner"),
-	GunShop1 = Instance.new("TextButton"),
+	UFO = Instance.new("TextButton"),
 	UICorner_49 = Instance.new("UICorner"),
+	TacoShop = Instance.new("TextButton"),
+	UICorner_50 = Instance.new("UICorner"),
+	LoadPos = Instance.new("TextButton"),
+	UICorner_51 = Instance.new("UICorner"),
+	GunShop1 = Instance.new("TextButton"),
+	UICorner_52 = Instance.new("UICorner"),
 	UIGridLayout_3 = Instance.new("UIGridLayout"),
 	SellingTools = Instance.new("Frame"),
 	CashTextbox = Instance.new("TextBox"),
@@ -132,41 +137,39 @@ local DaGood = {
 	CrashServerButton = Instance.new("TextButton"),
 	SideScripts = Instance.new("Frame"),
 	Aimlock = Instance.new("TextButton"),
-	UICorner_50 = Instance.new("UICorner"),
-	Users = Instance.new("TextButton"),
-	UICorner_51 = Instance.new("UICorner"),
-	MoneyESP = Instance.new("TextButton"),
-	UICorner_52 = Instance.new("UICorner"),
-	FullGod = Instance.new("TextButton"),
 	UICorner_53 = Instance.new("UICorner"),
-	Autofarm = Instance.new("TextButton"),
+	Users = Instance.new("TextButton"),
 	UICorner_54 = Instance.new("UICorner"),
-	HighTool = Instance.new("TextButton"),
+	MoneyESP = Instance.new("TextButton"),
 	UICorner_55 = Instance.new("UICorner"),
-	Esp = Instance.new("TextButton"),
+	FullGod = Instance.new("TextButton"),
 	UICorner_56 = Instance.new("UICorner"),
-	LastingBullets = Instance.new("TextButton"),
+	Autofarm = Instance.new("TextButton"),
 	UICorner_57 = Instance.new("UICorner"),
-	Stamina = Instance.new("TextButton"),
+	HighTool = Instance.new("TextButton"),
 	UICorner_58 = Instance.new("UICorner"),
-	Spin = Instance.new("TextButton"),
+	Esp = Instance.new("TextButton"),
 	UICorner_59 = Instance.new("UICorner"),
-	Unban_2 = Instance.new("TextButton"),
+	LastingBullets = Instance.new("TextButton"),
 	UICorner_60 = Instance.new("UICorner"),
-	SwagUsers = Instance.new("TextButton"),
+	Stamina = Instance.new("TextButton"),
 	UICorner_61 = Instance.new("UICorner"),
-	LockTools = Instance.new("TextButton"),
+	Spin = Instance.new("TextButton"),
 	UICorner_62 = Instance.new("UICorner"),
-	Invisible = Instance.new("TextButton"),
+	Unban_2 = Instance.new("TextButton"),
 	UICorner_63 = Instance.new("UICorner"),
-	InfTools = Instance.new("TextButton"),
+	SwagUsers = Instance.new("TextButton"),
 	UICorner_64 = Instance.new("UICorner"),
+	LockTools = Instance.new("TextButton"),
+	UICorner_65 = Instance.new("UICorner"),
+	Invisible = Instance.new("TextButton"),
+	UICorner_66 = Instance.new("UICorner"),
+	InfTools = Instance.new("TextButton"),
+	UICorner_67 = Instance.new("UICorner"),
 	UIGridLayout_4 = Instance.new("UIGridLayout"),
 	Toggles = Instance.new("Frame"),
 	QToTp = Instance.new("TextButton"),
 	QToTpColor = Instance.new("TextLabel"),
-	HideBlock = Instance.new("TextButton"),
-	HideBlockColor = Instance.new("TextLabel"),
 	HideUser = Instance.new("TextButton"),
 	HideUserColor = Instance.new("TextLabel"),
 	AutoStomp = Instance.new("TextButton"),
@@ -187,31 +190,29 @@ local DaGood = {
 	CashAuraColor = Instance.new("TextLabel"),
 	AntiEffects = Instance.new("TextButton"),
 	AntiEffectsColor = Instance.new("TextLabel"),
-	AltArmor = Instance.new("TextButton"),
-	AltArmorColor = Instance.new("TextLabel"),
 	AntiBag = Instance.new("TextButton"),
 	AntiBagColor = Instance.new("TextLabel"),
 	AntiSlow = Instance.new("TextButton"),
 	AntiSlowColor = Instance.new("TextLabel"),
 	UIGridLayout_5 = Instance.new("UIGridLayout"),
 	X = Instance.new("Frame"),
-	UIListLayout = Instance.new("UIListLayout"),
 	Title = Instance.new("TextLabel"),
 	Home_2 = Instance.new("TextButton"),
-	UICorner_65 = Instance.new("UICorner"),
-	Player_3 = Instance.new("TextButton"),
-	UICorner_66 = Instance.new("UICorner"),
-	SideScripts_2 = Instance.new("TextButton"),
-	UICorner_67 = Instance.new("UICorner"),
-	Toggles_2 = Instance.new("TextButton"),
 	UICorner_68 = Instance.new("UICorner"),
-	QuickBuy_2 = Instance.new("TextButton"),
+	Player_2 = Instance.new("TextButton"),
 	UICorner_69 = Instance.new("UICorner"),
-	QuickTp_2 = Instance.new("TextButton"),
+	SideScripts_2 = Instance.new("TextButton"),
 	UICorner_70 = Instance.new("UICorner"),
-	SellingTools_2 = Instance.new("TextButton"),
+	Toggles_2 = Instance.new("TextButton"),
 	UICorner_71 = Instance.new("UICorner"),
+	QuickBuy_2 = Instance.new("TextButton"),
+	UICorner_72 = Instance.new("UICorner"),
+	QuickTp_2 = Instance.new("TextButton"),
+	UICorner_73 = Instance.new("UICorner"),
+	SellingTools_2 = Instance.new("TextButton"),
+	UICorner_74 = Instance.new("UICorner"),
 	Specs = Instance.new("TextLabel"),
+	UIListLayout = Instance.new("UIListLayout"),
 }
 
 --Properties:
@@ -229,32 +230,33 @@ DaGood.Frame.Size = UDim2.new(0, 605, 0, 336)
 DaGood.UICorner.CornerRadius = UDim.new(0.0125000002, 0)
 DaGood.UICorner.Parent = DaGood.Frame
 
-DaGood.Player.Name = "Player"
-DaGood.Player.Parent = DaGood.Frame
-DaGood.Player.AnchorPoint = Vector2.new(1, 0)
-DaGood.Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Player.BackgroundTransparency = 1.000
-DaGood.Player.Position = UDim2.new(1, 0, 0, 0)
-DaGood.Player.Size = UDim2.new(0, 134, 1, 0)
+DaGood.Target.Name = "Target"
+DaGood.Target.Parent = DaGood.Frame
+DaGood.Target.AnchorPoint = Vector2.new(1, 0)
+DaGood.Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Target.BackgroundTransparency = 0.980
+DaGood.Target.Position = UDim2.new(1, 0, 0, 0)
+DaGood.Target.Size = UDim2.new(0, 144, 1, 0)
 
 DaGood.icon.Name = "icon"
-DaGood.icon.Parent = DaGood.Player
+DaGood.icon.Parent = DaGood.Target
 DaGood.icon.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.icon.BackgroundTransparency = 1.000
 DaGood.icon.Position = UDim2.new(0.5, 0, 0.0350000001, 0)
-DaGood.icon.Size = UDim2.new(0, 108, 0, 104)
+DaGood.icon.Size = UDim2.new(0, 104, 0, 104)
 DaGood.icon.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 DaGood.UICorner_2.CornerRadius = UDim.new(0, 500)
 DaGood.UICorner_2.Parent = DaGood.icon
 
 DaGood.input.Name = "input"
-DaGood.input.Parent = DaGood.Player
+DaGood.input.Parent = DaGood.Target
+DaGood.input.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.input.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.input.BackgroundTransparency = 1.000
 DaGood.input.BorderSizePixel = 0
-DaGood.input.Position = UDim2.new(0.072641857, 0, 0.392097205, 0)
+DaGood.input.Position = UDim2.new(0.5, 0, 0.39199999, 0)
 DaGood.input.Size = UDim2.new(0, 115, 0, 31)
 DaGood.input.Font = Enum.Font.GothamBlack
 DaGood.input.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -272,35 +274,38 @@ DaGood.Frame_2.Position = UDim2.new(0.5, 0, 1, 0)
 DaGood.Frame_2.Size = UDim2.new(0.850000024, 0, 0.0500000007, 0)
 
 DaGood.bountyLabel.Name = "bountyLabel"
-DaGood.bountyLabel.Parent = DaGood.Player
+DaGood.bountyLabel.Parent = DaGood.Target
+DaGood.bountyLabel.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.bountyLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.bountyLabel.BackgroundTransparency = 1.000
 DaGood.bountyLabel.BorderSizePixel = 0
-DaGood.bountyLabel.Position = UDim2.new(0.072641857, 0, 0.633550763, 0)
+DaGood.bountyLabel.Position = UDim2.new(0.5, 0, 0.629999995, 0)
 DaGood.bountyLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.bountyLabel.Font = Enum.Font.Gotham
-DaGood.bountyLabel.Text = "Bounty:"
+DaGood.bountyLabel.Text = "Bounty: 123123"
 DaGood.bountyLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.bountyLabel.TextSize = 14.000
 
 DaGood.crewLabel.Name = "crewLabel"
-DaGood.crewLabel.Parent = DaGood.Player
+DaGood.crewLabel.Parent = DaGood.Target
+DaGood.crewLabel.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.crewLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.crewLabel.BackgroundTransparency = 1.000
 DaGood.crewLabel.BorderSizePixel = 0
-DaGood.crewLabel.Position = UDim2.new(0.072641857, 0, 0.737304032, 0)
+DaGood.crewLabel.Position = UDim2.new(0.5, 0, 0.736999989, 0)
 DaGood.crewLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.crewLabel.Font = Enum.Font.Gotham
-DaGood.crewLabel.Text = "Crew:"
+DaGood.crewLabel.Text = "Crew: 123123"
 DaGood.crewLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.crewLabel.TextSize = 14.000
 DaGood.crewLabel.TextWrapped = true
 
 DaGood.goTo.Name = "goTo"
-DaGood.goTo.Parent = DaGood.Player
-DaGood.goTo.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.goTo.Parent = DaGood.Target
+DaGood.goTo.AnchorPoint = Vector2.new(0.5, 0)
+DaGood.goTo.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.goTo.BorderSizePixel = 0
-DaGood.goTo.Position = UDim2.new(0.0729999989, 0, 0.861000001, 0)
+DaGood.goTo.Position = UDim2.new(0.5, 0, 0.861000001, 0)
 DaGood.goTo.Size = UDim2.new(0, 114, 0, 29)
 DaGood.goTo.Font = Enum.Font.GothamBlack
 DaGood.goTo.Text = "Go To"
@@ -308,21 +313,25 @@ DaGood.goTo.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.goTo.TextSize = 16.000
 DaGood.goTo.TextWrapped = true
 
-DaGood.UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+DaGood.UICorner_3.CornerRadius = UDim.new(0.115000002, 0)
 DaGood.UICorner_3.Parent = DaGood.goTo
 
 DaGood.cashLabel.Name = "cashLabel"
-DaGood.cashLabel.Parent = DaGood.Player
+DaGood.cashLabel.Parent = DaGood.Target
+DaGood.cashLabel.AnchorPoint = Vector2.new(0.5, 0)
 DaGood.cashLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 DaGood.cashLabel.BackgroundTransparency = 1.000
 DaGood.cashLabel.BorderSizePixel = 0
-DaGood.cashLabel.Position = UDim2.new(0.072641857, 0, 0.519756854, 0)
+DaGood.cashLabel.Position = UDim2.new(0.5, 0, 0.519999981, 0)
 DaGood.cashLabel.Size = UDim2.new(0, 115, 0, 26)
 DaGood.cashLabel.Font = Enum.Font.Gotham
-DaGood.cashLabel.Text = "Cash:"
+DaGood.cashLabel.Text = "Cash: 123123"
 DaGood.cashLabel.TextColor3 = Color3.fromRGB(114, 118, 125)
 DaGood.cashLabel.TextSize = 14.000
 DaGood.cashLabel.TextWrapped = true
+
+DaGood.UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
+DaGood.UICorner_4.Parent = DaGood.Target
 
 DaGood.Y.Name = "Y"
 DaGood.Y.Parent = DaGood.Frame
@@ -331,59 +340,49 @@ DaGood.Y.BackgroundTransparency = 1.000
 DaGood.Y.Position = UDim2.new(0.25, 0, 0, 0)
 DaGood.Y.Size = UDim2.new(0, 316, 1, 0)
 
-DaGood.Player_2.Name = "Player"
-DaGood.Player_2.Parent = DaGood.Y
-DaGood.Player_2.AnchorPoint = Vector2.new(0, 0.5)
-DaGood.Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Player_2.BackgroundTransparency = 1.000
-DaGood.Player_2.Position = UDim2.new(0, 0, 0.5, 0)
-DaGood.Player_2.Size = UDim2.new(0, 316, 0, 300)
+DaGood.Player.Name = "Player"
+DaGood.Player.Parent = DaGood.Y
+DaGood.Player.AnchorPoint = Vector2.new(0, 0.5)
+DaGood.Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Player.BackgroundTransparency = 1.000
+DaGood.Player.Position = UDim2.new(0, 0, 0.5, 0)
+DaGood.Player.Size = UDim2.new(0, 298, 0, 300)
 
-DaGood.FreeFists.Name = "FreeFists"
-DaGood.FreeFists.Parent = DaGood.Player_2
-DaGood.FreeFists.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
-DaGood.FreeFists.BorderSizePixel = 0
-DaGood.FreeFists.Position = UDim2.new(0.0218890235, 0, 0.590557039, 0)
-DaGood.FreeFists.Size = UDim2.new(0, 94, 0, 46)
-DaGood.FreeFists.Font = Enum.Font.GothamBlack
-DaGood.FreeFists.Text = "Free Fists (T)"
-DaGood.FreeFists.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.FreeFists.TextSize = 13.000
+DaGood.UIGridLayout.Parent = DaGood.Player
+DaGood.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+DaGood.UIGridLayout.CellSize = UDim2.new(0, 96, 0, 25)
 
-DaGood.UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_4.Parent = DaGood.FreeFists
-
-DaGood.Fling.Name = "Fling"
-DaGood.Fling.Parent = DaGood.Player_2
-DaGood.Fling.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
-DaGood.Fling.BorderSizePixel = 0
-DaGood.Fling.Position = UDim2.new(0.352205783, 0, 0.409230769, 0)
-DaGood.Fling.Size = UDim2.new(0, 94, 0, 46)
-DaGood.Fling.Font = Enum.Font.GothamBlack
-DaGood.Fling.Text = "Fling"
-DaGood.Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Fling.TextSize = 14.000
+DaGood.Reach.Name = "Reach"
+DaGood.Reach.Parent = DaGood.Player
+DaGood.Reach.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
+DaGood.Reach.BorderSizePixel = 0
+DaGood.Reach.Position = UDim2.new(0.352205783, 0, 0.409230769, 0)
+DaGood.Reach.Size = UDim2.new(0, 94, 0, 46)
+DaGood.Reach.Font = Enum.Font.GothamBlack
+DaGood.Reach.Text = "Reach"
+DaGood.Reach.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Reach.TextSize = 14.000
 
 DaGood.UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_5.Parent = DaGood.Fling
+DaGood.UICorner_5.Parent = DaGood.Reach
 
-DaGood.Unban.Name = "Unban"
-DaGood.Unban.Parent = DaGood.Player_2
-DaGood.Unban.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
-DaGood.Unban.BorderSizePixel = 0
-DaGood.Unban.Position = UDim2.new(0.355005682, 0, 0.221326202, 0)
-DaGood.Unban.Size = UDim2.new(0, 94, 0, 46)
-DaGood.Unban.Font = Enum.Font.GothamBlack
-DaGood.Unban.Text = "Unban"
-DaGood.Unban.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Unban.TextSize = 14.000
+DaGood.Target_2.Name = "Target"
+DaGood.Target_2.Parent = DaGood.Player
+DaGood.Target_2.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
+DaGood.Target_2.BorderSizePixel = 0
+DaGood.Target_2.Position = UDim2.new(0.681183517, 0, 0.0399999991, 0)
+DaGood.Target_2.Size = UDim2.new(0, 94, 0, 46)
+DaGood.Target_2.Font = Enum.Font.GothamBlack
+DaGood.Target_2.Text = "Target"
+DaGood.Target_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Target_2.TextSize = 14.000
 
 DaGood.UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_6.Parent = DaGood.Unban
+DaGood.UICorner_6.Parent = DaGood.Target_2
 
 DaGood.View.Name = "View"
-DaGood.View.Parent = DaGood.Player_2
-DaGood.View.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.View.Parent = DaGood.Player
+DaGood.View.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.View.BorderSizePixel = 0
 DaGood.View.Position = UDim2.new(0.680955052, 0, 0.221326202, 0)
 DaGood.View.Size = UDim2.new(0, 94, 0, 46)
@@ -395,37 +394,37 @@ DaGood.View.TextSize = 14.000
 DaGood.UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_7.Parent = DaGood.View
 
-DaGood.Target.Name = "Target"
-DaGood.Target.Parent = DaGood.Player_2
-DaGood.Target.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
-DaGood.Target.BorderSizePixel = 0
-DaGood.Target.Position = UDim2.new(0.681183517, 0, 0.0399999991, 0)
-DaGood.Target.Size = UDim2.new(0, 94, 0, 46)
-DaGood.Target.Font = Enum.Font.GothamBlack
-DaGood.Target.Text = "Target"
-DaGood.Target.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Target.TextSize = 14.000
+DaGood.Unban.Name = "Unban"
+DaGood.Unban.Parent = DaGood.Player
+DaGood.Unban.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
+DaGood.Unban.BorderSizePixel = 0
+DaGood.Unban.Position = UDim2.new(0.355005682, 0, 0.221326202, 0)
+DaGood.Unban.Size = UDim2.new(0, 94, 0, 46)
+DaGood.Unban.Font = Enum.Font.GothamBlack
+DaGood.Unban.Text = "Unban"
+DaGood.Unban.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Unban.TextSize = 14.000
 
 DaGood.UICorner_8.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_8.Parent = DaGood.Target
+DaGood.UICorner_8.Parent = DaGood.Unban
 
-DaGood.Fly.Name = "Fly"
-DaGood.Fly.Parent = DaGood.Player_2
-DaGood.Fly.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
-DaGood.Fly.BorderSizePixel = 0
-DaGood.Fly.Position = UDim2.new(0.355234176, 0, 0.0399999991, 0)
-DaGood.Fly.Size = UDim2.new(0, 94, 0, 46)
-DaGood.Fly.Font = Enum.Font.GothamBlack
-DaGood.Fly.Text = "Fly (X)"
-DaGood.Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Fly.TextSize = 14.000
+DaGood.Fling.Name = "Fling"
+DaGood.Fling.Parent = DaGood.Player
+DaGood.Fling.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
+DaGood.Fling.BorderSizePixel = 0
+DaGood.Fling.Position = UDim2.new(0.352205783, 0, 0.409230769, 0)
+DaGood.Fling.Size = UDim2.new(0, 94, 0, 46)
+DaGood.Fling.Font = Enum.Font.GothamBlack
+DaGood.Fling.Text = "Fling"
+DaGood.Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Fling.TextSize = 14.000
 
 DaGood.UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_9.Parent = DaGood.Fly
+DaGood.UICorner_9.Parent = DaGood.Fling
 
 DaGood.NoClip.Name = "NoClip"
-DaGood.NoClip.Parent = DaGood.Player_2
-DaGood.NoClip.BackgroundColor3 = Color3.fromRGB(96, 100, 244)
+DaGood.NoClip.Parent = DaGood.Player
+DaGood.NoClip.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
 DaGood.NoClip.BorderSizePixel = 0
 DaGood.NoClip.Position = UDim2.new(0.677926719, 0, 0.590557039, 0)
 DaGood.NoClip.Size = UDim2.new(0, 94, 0, 46)
@@ -437,10 +436,47 @@ DaGood.NoClip.TextSize = 14.000
 DaGood.UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
 DaGood.UICorner_10.Parent = DaGood.NoClip
 
-DaGood.UIGridLayout.Parent = DaGood.Player_2
-DaGood.UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-DaGood.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-DaGood.UIGridLayout.CellSize = UDim2.new(0, 94, 0, 25)
+DaGood.Fly.Name = "Fly"
+DaGood.Fly.Parent = DaGood.Player
+DaGood.Fly.BackgroundColor3 = Color3.fromRGB(244, 96, 100)
+DaGood.Fly.BorderSizePixel = 0
+DaGood.Fly.Position = UDim2.new(0.355234176, 0, 0.0399999991, 0)
+DaGood.Fly.Size = UDim2.new(0, 94, 0, 46)
+DaGood.Fly.ZIndex = 2
+DaGood.Fly.Font = Enum.Font.GothamBlack
+DaGood.Fly.Text = "Fly (X)"
+DaGood.Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Fly.TextSize = 14.000
+
+DaGood.UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_11.Parent = DaGood.Fly
+
+DaGood.Input.Name = "Input"
+DaGood.Input.Parent = DaGood.Fly
+DaGood.Input.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Input.Position = UDim2.new(0, 0, 1.14999998, 0)
+DaGood.Input.Size = UDim2.new(1, 0, 0, 25)
+DaGood.Input.Visible = false
+DaGood.Input.Font = Enum.Font.GothamBold
+DaGood.Input.PlaceholderColor3 = Color3.fromRGB(84, 84, 84)
+DaGood.Input.PlaceholderText = "Fly Speed"
+DaGood.Input.Text = "17"
+DaGood.Input.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaGood.Input.TextSize = 12.000
+
+DaGood.UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_12.Parent = DaGood.Input
+
+DaGood.DropDown.Name = "DropDown"
+DaGood.DropDown.Parent = DaGood.Fly
+DaGood.DropDown.AnchorPoint = Vector2.new(1, 0)
+DaGood.DropDown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.DropDown.BackgroundTransparency = 1.000
+DaGood.DropDown.Position = UDim2.new(1, 0, 0, 0)
+DaGood.DropDown.Size = UDim2.new(0.25, 0, 1, 0)
+DaGood.DropDown.Image = "rbxassetid://3926305904"
+DaGood.DropDown.ImageRectOffset = Vector2.new(564, 284)
+DaGood.DropDown.ImageRectSize = Vector2.new(36, 36)
 
 DaGood.Home.Name = "Home"
 DaGood.Home.Parent = DaGood.Y
@@ -465,10 +501,13 @@ DaGood.Welcome.TextSize = 20.000
 DaGood.PlayersImage.Name = "PlayersImage"
 DaGood.PlayersImage.Parent = DaGood.Home
 DaGood.PlayersImage.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+DaGood.PlayersImage.BackgroundTransparency = 1.000
 DaGood.PlayersImage.BorderSizePixel = 0
 DaGood.PlayersImage.Position = UDim2.new(0.275316447, 0, 0.243076921, 0)
 DaGood.PlayersImage.Size = UDim2.new(0, 140, 0, 140)
 DaGood.PlayersImage.Image = "rbxthumb://type=AvatarHeadShot&id=481584640&w=420&h=420"
+
+DaGood.UICorner_13.Parent = DaGood.PlayersImage
 
 DaGood.Username.Name = "Username"
 DaGood.Username.Parent = DaGood.Home
@@ -512,8 +551,8 @@ DaGood.TacShotgun.Text = "TacShotgun"
 DaGood.TacShotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.TacShotgun.TextSize = 14.000
 
-DaGood.UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_11.Parent = DaGood.TacShotgun
+DaGood.UICorner_14.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_14.Parent = DaGood.TacShotgun
 
 DaGood.AUG.Name = "AUG"
 DaGood.AUG.Parent = DaGood.QuickBuy
@@ -526,8 +565,8 @@ DaGood.AUG.Text = "AUG"
 DaGood.AUG.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.AUG.TextSize = 14.000
 
-DaGood.UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_12.Parent = DaGood.AUG
+DaGood.UICorner_15.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_15.Parent = DaGood.AUG
 
 DaGood.Flamethrower.Name = "Flamethrower"
 DaGood.Flamethrower.Parent = DaGood.QuickBuy
@@ -540,8 +579,8 @@ DaGood.Flamethrower.Text = "Flamethrower"
 DaGood.Flamethrower.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Flamethrower.TextSize = 14.000
 
-DaGood.UICorner_13.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_13.Parent = DaGood.Flamethrower
+DaGood.UICorner_16.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_16.Parent = DaGood.Flamethrower
 
 DaGood.DBShotgun.Name = "DBShotgun"
 DaGood.DBShotgun.Parent = DaGood.QuickBuy
@@ -554,8 +593,8 @@ DaGood.DBShotgun.Text = "DB Shotgun"
 DaGood.DBShotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.DBShotgun.TextSize = 14.000
 
-DaGood.UICorner_14.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_14.Parent = DaGood.DBShotgun
+DaGood.UICorner_17.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_17.Parent = DaGood.DBShotgun
 
 DaGood.AK47.Name = "AK47"
 DaGood.AK47.Parent = DaGood.QuickBuy
@@ -568,8 +607,8 @@ DaGood.AK47.Text = "AK47"
 DaGood.AK47.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.AK47.TextSize = 14.000
 
-DaGood.UICorner_15.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_15.Parent = DaGood.AK47
+DaGood.UICorner_18.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_18.Parent = DaGood.AK47
 
 DaGood.Drumgun.Name = "Drumgun"
 DaGood.Drumgun.Parent = DaGood.QuickBuy
@@ -582,8 +621,8 @@ DaGood.Drumgun.Text = "Drumgun"
 DaGood.Drumgun.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Drumgun.TextSize = 14.000
 
-DaGood.UICorner_16.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_16.Parent = DaGood.Drumgun
+DaGood.UICorner_19.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_19.Parent = DaGood.Drumgun
 
 DaGood.Flashbang.Name = "Flashbang"
 DaGood.Flashbang.Parent = DaGood.QuickBuy
@@ -596,8 +635,8 @@ DaGood.Flashbang.Text = "Flashbang"
 DaGood.Flashbang.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Flashbang.TextSize = 14.000
 
-DaGood.UICorner_17.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_17.Parent = DaGood.Flashbang
+DaGood.UICorner_20.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_20.Parent = DaGood.Flashbang
 
 DaGood.Revolver.Name = "Revolver"
 DaGood.Revolver.Parent = DaGood.QuickBuy
@@ -610,8 +649,8 @@ DaGood.Revolver.Text = "Revolver"
 DaGood.Revolver.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Revolver.TextSize = 14.000
 
-DaGood.UICorner_18.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_18.Parent = DaGood.Revolver
+DaGood.UICorner_21.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_21.Parent = DaGood.Revolver
 
 DaGood.Shotgun.Name = "Shotgun"
 DaGood.Shotgun.Parent = DaGood.QuickBuy
@@ -624,8 +663,8 @@ DaGood.Shotgun.Text = "Shotgun"
 DaGood.Shotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Shotgun.TextSize = 14.000
 
-DaGood.UICorner_19.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_19.Parent = DaGood.Shotgun
+DaGood.UICorner_22.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_22.Parent = DaGood.Shotgun
 
 DaGood.SIlencer.Name = "SIlencer"
 DaGood.SIlencer.Parent = DaGood.QuickBuy
@@ -638,8 +677,8 @@ DaGood.SIlencer.Text = "Silencer"
 DaGood.SIlencer.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SIlencer.TextSize = 14.000
 
-DaGood.UICorner_20.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_20.Parent = DaGood.SIlencer
+DaGood.UICorner_23.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_23.Parent = DaGood.SIlencer
 
 DaGood.NadeLauncher.Name = "NadeLauncher"
 DaGood.NadeLauncher.Parent = DaGood.QuickBuy
@@ -652,8 +691,8 @@ DaGood.NadeLauncher.Text = "NadeLauncher"
 DaGood.NadeLauncher.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.NadeLauncher.TextSize = 14.000
 
-DaGood.UICorner_21.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_21.Parent = DaGood.NadeLauncher
+DaGood.UICorner_24.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_24.Parent = DaGood.NadeLauncher
 
 DaGood.AR.Name = "AR"
 DaGood.AR.Parent = DaGood.QuickBuy
@@ -666,8 +705,8 @@ DaGood.AR.Text = "AR"
 DaGood.AR.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.AR.TextSize = 14.000
 
-DaGood.UICorner_22.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_22.Parent = DaGood.AR
+DaGood.UICorner_25.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_25.Parent = DaGood.AR
 
 DaGood.Knife.Name = "Knife"
 DaGood.Knife.Parent = DaGood.QuickBuy
@@ -680,8 +719,8 @@ DaGood.Knife.Text = "Knife"
 DaGood.Knife.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Knife.TextSize = 14.000
 
-DaGood.UICorner_23.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_23.Parent = DaGood.Knife
+DaGood.UICorner_26.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_26.Parent = DaGood.Knife
 
 DaGood.RPG.Name = "RPG"
 DaGood.RPG.Parent = DaGood.QuickBuy
@@ -694,8 +733,8 @@ DaGood.RPG.Text = "RPG"
 DaGood.RPG.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.RPG.TextSize = 14.000
 
-DaGood.UICorner_24.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_24.Parent = DaGood.RPG
+DaGood.UICorner_27.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_27.Parent = DaGood.RPG
 
 DaGood.Glock.Name = "Glock"
 DaGood.Glock.Parent = DaGood.QuickBuy
@@ -708,8 +747,8 @@ DaGood.Glock.Text = "Glock"
 DaGood.Glock.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Glock.TextSize = 14.000
 
-DaGood.UICorner_25.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_25.Parent = DaGood.Glock
+DaGood.UICorner_28.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_28.Parent = DaGood.Glock
 
 DaGood.UIGridLayout_2.Parent = DaGood.QuickBuy
 DaGood.UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -727,8 +766,8 @@ DaGood.SilencedAR.Text = "SilencedAR"
 DaGood.SilencedAR.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SilencedAR.TextSize = 14.000
 
-DaGood.UICorner_26.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_26.Parent = DaGood.SilencedAR
+DaGood.UICorner_29.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_29.Parent = DaGood.SilencedAR
 
 DaGood.Hammer.Name = "Hammer"
 DaGood.Hammer.Parent = DaGood.QuickBuy
@@ -741,8 +780,8 @@ DaGood.Hammer.Text = "Hammer"
 DaGood.Hammer.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Hammer.TextSize = 14.000
 
-DaGood.UICorner_27.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_27.Parent = DaGood.Hammer
+DaGood.UICorner_30.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_30.Parent = DaGood.Hammer
 
 DaGood.Pencil.Name = "Pencil"
 DaGood.Pencil.Parent = DaGood.QuickBuy
@@ -755,8 +794,8 @@ DaGood.Pencil.Text = "Pencil"
 DaGood.Pencil.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Pencil.TextSize = 14.000
 
-DaGood.UICorner_28.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_28.Parent = DaGood.Pencil
+DaGood.UICorner_31.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_31.Parent = DaGood.Pencil
 
 DaGood.Bat.Name = "Bat"
 DaGood.Bat.Parent = DaGood.QuickBuy
@@ -769,8 +808,8 @@ DaGood.Bat.Text = "Bat"
 DaGood.Bat.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Bat.TextSize = 14.000
 
-DaGood.UICorner_29.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_29.Parent = DaGood.Bat
+DaGood.UICorner_32.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_32.Parent = DaGood.Bat
 
 DaGood.Armor.Name = "Armor"
 DaGood.Armor.Parent = DaGood.QuickBuy
@@ -783,8 +822,8 @@ DaGood.Armor.Text = "Armor"
 DaGood.Armor.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Armor.TextSize = 14.000
 
-DaGood.UICorner_30.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_30.Parent = DaGood.Armor
+DaGood.UICorner_33.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_33.Parent = DaGood.Armor
 
 DaGood.HeavyArmor.Name = "HeavyArmor"
 DaGood.HeavyArmor.Parent = DaGood.QuickBuy
@@ -797,8 +836,8 @@ DaGood.HeavyArmor.Text = "HeavyArmor"
 DaGood.HeavyArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.HeavyArmor.TextSize = 14.000
 
-DaGood.UICorner_31.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_31.Parent = DaGood.HeavyArmor
+DaGood.UICorner_34.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_34.Parent = DaGood.HeavyArmor
 
 DaGood.Food.Name = "Food"
 DaGood.Food.Parent = DaGood.QuickBuy
@@ -811,8 +850,8 @@ DaGood.Food.Text = "Food"
 DaGood.Food.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Food.TextSize = 14.000
 
-DaGood.UICorner_32.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_32.Parent = DaGood.Food
+DaGood.UICorner_35.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_35.Parent = DaGood.Food
 
 DaGood.Grenade.Name = "Grenade"
 DaGood.Grenade.Parent = DaGood.QuickBuy
@@ -825,8 +864,8 @@ DaGood.Grenade.Text = "Grenade"
 DaGood.Grenade.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Grenade.TextSize = 14.000
 
-DaGood.UICorner_33.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_33.Parent = DaGood.Grenade
+DaGood.UICorner_36.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_36.Parent = DaGood.Grenade
 
 DaGood.Mask.Name = "Mask"
 DaGood.Mask.Parent = DaGood.QuickBuy
@@ -839,8 +878,8 @@ DaGood.Mask.Text = "Mask"
 DaGood.Mask.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Mask.TextSize = 14.000
 
-DaGood.UICorner_34.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_34.Parent = DaGood.Mask
+DaGood.UICorner_37.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_37.Parent = DaGood.Mask
 
 DaGood.QuickTp.Name = "QuickTp"
 DaGood.QuickTp.Parent = DaGood.Y
@@ -862,8 +901,8 @@ DaGood.GunShop2.Text = "GunShop(UP)"
 DaGood.GunShop2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.GunShop2.TextSize = 14.000
 
-DaGood.UICorner_35.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_35.Parent = DaGood.GunShop2
+DaGood.UICorner_38.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_38.Parent = DaGood.GunShop2
 
 DaGood.PrevPosition.Name = "PrevPosition"
 DaGood.PrevPosition.Parent = DaGood.QuickTp
@@ -876,8 +915,8 @@ DaGood.PrevPosition.Text = "PrevPos"
 DaGood.PrevPosition.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.PrevPosition.TextSize = 14.000
 
-DaGood.UICorner_36.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_36.Parent = DaGood.PrevPosition
+DaGood.UICorner_39.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_39.Parent = DaGood.PrevPosition
 
 DaGood.Bank.Name = "Bank"
 DaGood.Bank.Parent = DaGood.QuickTp
@@ -890,8 +929,8 @@ DaGood.Bank.Text = "Bank"
 DaGood.Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Bank.TextSize = 14.000
 
-DaGood.UICorner_37.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_37.Parent = DaGood.Bank
+DaGood.UICorner_40.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_40.Parent = DaGood.Bank
 
 DaGood.SafeZone1.Name = "SafeZone1"
 DaGood.SafeZone1.Parent = DaGood.QuickTp
@@ -904,8 +943,8 @@ DaGood.SafeZone1.Text = "Safe Zone #1"
 DaGood.SafeZone1.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SafeZone1.TextSize = 14.000
 
-DaGood.UICorner_38.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_38.Parent = DaGood.SafeZone1
+DaGood.UICorner_41.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_41.Parent = DaGood.SafeZone1
 
 DaGood.SetSpawn.Name = "SetSpawn"
 DaGood.SetSpawn.Parent = DaGood.QuickTp
@@ -918,8 +957,8 @@ DaGood.SetSpawn.Text = "SetSpawn"
 DaGood.SetSpawn.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SetSpawn.TextSize = 14.000
 
-DaGood.UICorner_39.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_39.Parent = DaGood.SetSpawn
+DaGood.UICorner_42.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_42.Parent = DaGood.SetSpawn
 
 DaGood.Sewer.Name = "Sewer"
 DaGood.Sewer.Parent = DaGood.QuickTp
@@ -932,8 +971,8 @@ DaGood.Sewer.Text = "Sewer"
 DaGood.Sewer.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Sewer.TextSize = 14.000
 
-DaGood.UICorner_40.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_40.Parent = DaGood.Sewer
+DaGood.UICorner_43.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_43.Parent = DaGood.Sewer
 
 DaGood.Playground.Name = "Playground"
 DaGood.Playground.Parent = DaGood.QuickTp
@@ -946,8 +985,8 @@ DaGood.Playground.Text = "Playground"
 DaGood.Playground.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Playground.TextSize = 14.000
 
-DaGood.UICorner_41.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_41.Parent = DaGood.Playground
+DaGood.UICorner_44.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_44.Parent = DaGood.Playground
 
 DaGood.GasStation.Name = "GasStation"
 DaGood.GasStation.Parent = DaGood.QuickTp
@@ -960,8 +999,8 @@ DaGood.GasStation.Text = "GasStation"
 DaGood.GasStation.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.GasStation.TextSize = 14.000
 
-DaGood.UICorner_42.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_42.Parent = DaGood.GasStation
+DaGood.UICorner_45.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_45.Parent = DaGood.GasStation
 
 DaGood.LavaBase.Name = "LavaBase"
 DaGood.LavaBase.Parent = DaGood.QuickTp
@@ -974,8 +1013,8 @@ DaGood.LavaBase.Text = "LavaBase"
 DaGood.LavaBase.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.LavaBase.TextSize = 14.000
 
-DaGood.UICorner_43.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_43.Parent = DaGood.LavaBase
+DaGood.UICorner_46.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_46.Parent = DaGood.LavaBase
 
 DaGood.SavePos.Name = "SavePos"
 DaGood.SavePos.Parent = DaGood.QuickTp
@@ -988,8 +1027,8 @@ DaGood.SavePos.Text = "SavePos"
 DaGood.SavePos.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SavePos.TextSize = 14.000
 
-DaGood.UICorner_44.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_44.Parent = DaGood.SavePos
+DaGood.UICorner_47.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_47.Parent = DaGood.SavePos
 
 DaGood.SafeZone2.Name = "SafeZone2"
 DaGood.SafeZone2.Parent = DaGood.QuickTp
@@ -1002,8 +1041,8 @@ DaGood.SafeZone2.Text = "Safe Zone #2"
 DaGood.SafeZone2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SafeZone2.TextSize = 14.000
 
-DaGood.UICorner_45.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_45.Parent = DaGood.SafeZone2
+DaGood.UICorner_48.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_48.Parent = DaGood.SafeZone2
 
 DaGood.UFO.Name = "UFO"
 DaGood.UFO.Parent = DaGood.QuickTp
@@ -1016,8 +1055,8 @@ DaGood.UFO.Text = "UFO"
 DaGood.UFO.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.UFO.TextSize = 14.000
 
-DaGood.UICorner_46.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_46.Parent = DaGood.UFO
+DaGood.UICorner_49.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_49.Parent = DaGood.UFO
 
 DaGood.TacoShop.Name = "TacoShop"
 DaGood.TacoShop.Parent = DaGood.QuickTp
@@ -1030,8 +1069,8 @@ DaGood.TacoShop.Text = "TacoShop"
 DaGood.TacoShop.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.TacoShop.TextSize = 14.000
 
-DaGood.UICorner_47.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_47.Parent = DaGood.TacoShop
+DaGood.UICorner_50.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_50.Parent = DaGood.TacoShop
 
 DaGood.LoadPos.Name = "LoadPos"
 DaGood.LoadPos.Parent = DaGood.QuickTp
@@ -1044,8 +1083,8 @@ DaGood.LoadPos.Text = "LoadPos"
 DaGood.LoadPos.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.LoadPos.TextSize = 14.000
 
-DaGood.UICorner_48.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_48.Parent = DaGood.LoadPos
+DaGood.UICorner_51.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_51.Parent = DaGood.LoadPos
 
 DaGood.GunShop1.Name = "GunShop1"
 DaGood.GunShop1.Parent = DaGood.QuickTp
@@ -1058,8 +1097,8 @@ DaGood.GunShop1.Text = "GunShop(AK)"
 DaGood.GunShop1.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.GunShop1.TextSize = 14.000
 
-DaGood.UICorner_49.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_49.Parent = DaGood.GunShop1
+DaGood.UICorner_52.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_52.Parent = DaGood.GunShop1
 
 DaGood.UIGridLayout_3.Parent = DaGood.QuickTp
 DaGood.UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -1180,8 +1219,8 @@ DaGood.Aimlock.Text = "Aimlock"
 DaGood.Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Aimlock.TextSize = 14.000
 
-DaGood.UICorner_50.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_50.Parent = DaGood.Aimlock
+DaGood.UICorner_53.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_53.Parent = DaGood.Aimlock
 
 DaGood.Users.Name = "Users"
 DaGood.Users.Parent = DaGood.SideScripts
@@ -1194,8 +1233,8 @@ DaGood.Users.Text = "Users"
 DaGood.Users.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Users.TextSize = 14.000
 
-DaGood.UICorner_51.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_51.Parent = DaGood.Users
+DaGood.UICorner_54.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_54.Parent = DaGood.Users
 
 DaGood.MoneyESP.Name = "MoneyESP"
 DaGood.MoneyESP.Parent = DaGood.SideScripts
@@ -1208,8 +1247,8 @@ DaGood.MoneyESP.Text = "MoneyESP"
 DaGood.MoneyESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.MoneyESP.TextSize = 14.000
 
-DaGood.UICorner_52.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_52.Parent = DaGood.MoneyESP
+DaGood.UICorner_55.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_55.Parent = DaGood.MoneyESP
 
 DaGood.FullGod.Name = "FullGod"
 DaGood.FullGod.Parent = DaGood.SideScripts
@@ -1222,8 +1261,8 @@ DaGood.FullGod.Text = "Full God"
 DaGood.FullGod.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.FullGod.TextSize = 14.000
 
-DaGood.UICorner_53.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_53.Parent = DaGood.FullGod
+DaGood.UICorner_56.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_56.Parent = DaGood.FullGod
 
 DaGood.Autofarm.Name = "Autofarm"
 DaGood.Autofarm.Parent = DaGood.SideScripts
@@ -1236,8 +1275,8 @@ DaGood.Autofarm.Text = "Autofarm"
 DaGood.Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Autofarm.TextSize = 14.000
 
-DaGood.UICorner_54.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_54.Parent = DaGood.Autofarm
+DaGood.UICorner_57.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_57.Parent = DaGood.Autofarm
 
 DaGood.HighTool.Name = "HighTool"
 DaGood.HighTool.Parent = DaGood.SideScripts
@@ -1250,8 +1289,8 @@ DaGood.HighTool.Text = "High Tool"
 DaGood.HighTool.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.HighTool.TextSize = 14.000
 
-DaGood.UICorner_55.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_55.Parent = DaGood.HighTool
+DaGood.UICorner_58.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_58.Parent = DaGood.HighTool
 
 DaGood.Esp.Name = "Esp"
 DaGood.Esp.Parent = DaGood.SideScripts
@@ -1264,8 +1303,8 @@ DaGood.Esp.Text = "Esp"
 DaGood.Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Esp.TextSize = 14.000
 
-DaGood.UICorner_56.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_56.Parent = DaGood.Esp
+DaGood.UICorner_59.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_59.Parent = DaGood.Esp
 
 DaGood.LastingBullets.Name = "LastingBullets"
 DaGood.LastingBullets.Parent = DaGood.SideScripts
@@ -1278,8 +1317,8 @@ DaGood.LastingBullets.Text = "LastingBullets"
 DaGood.LastingBullets.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.LastingBullets.TextSize = 14.000
 
-DaGood.UICorner_57.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_57.Parent = DaGood.LastingBullets
+DaGood.UICorner_60.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_60.Parent = DaGood.LastingBullets
 
 DaGood.Stamina.Name = "Stamina"
 DaGood.Stamina.Parent = DaGood.SideScripts
@@ -1292,8 +1331,8 @@ DaGood.Stamina.Text = "Stamina"
 DaGood.Stamina.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Stamina.TextSize = 14.000
 
-DaGood.UICorner_58.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_58.Parent = DaGood.Stamina
+DaGood.UICorner_61.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_61.Parent = DaGood.Stamina
 
 DaGood.Spin.Name = "Spin"
 DaGood.Spin.Parent = DaGood.SideScripts
@@ -1306,8 +1345,8 @@ DaGood.Spin.Text = "Spin"
 DaGood.Spin.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Spin.TextSize = 14.000
 
-DaGood.UICorner_59.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_59.Parent = DaGood.Spin
+DaGood.UICorner_62.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_62.Parent = DaGood.Spin
 
 DaGood.Unban_2.Name = "Unban"
 DaGood.Unban_2.Parent = DaGood.SideScripts
@@ -1320,8 +1359,8 @@ DaGood.Unban_2.Text = "Unban"
 DaGood.Unban_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Unban_2.TextSize = 14.000
 
-DaGood.UICorner_60.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_60.Parent = DaGood.Unban_2
+DaGood.UICorner_63.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_63.Parent = DaGood.Unban_2
 
 DaGood.SwagUsers.Name = "SwagUsers"
 DaGood.SwagUsers.Parent = DaGood.SideScripts
@@ -1334,8 +1373,8 @@ DaGood.SwagUsers.Text = "SwagUsers"
 DaGood.SwagUsers.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SwagUsers.TextSize = 14.000
 
-DaGood.UICorner_61.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_61.Parent = DaGood.SwagUsers
+DaGood.UICorner_64.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_64.Parent = DaGood.SwagUsers
 
 DaGood.LockTools.Name = "LockTools"
 DaGood.LockTools.Parent = DaGood.SideScripts
@@ -1348,8 +1387,8 @@ DaGood.LockTools.Text = "LockTools"
 DaGood.LockTools.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.LockTools.TextSize = 14.000
 
-DaGood.UICorner_62.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_62.Parent = DaGood.LockTools
+DaGood.UICorner_65.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_65.Parent = DaGood.LockTools
 
 DaGood.Invisible.Name = "Invisible"
 DaGood.Invisible.Parent = DaGood.SideScripts
@@ -1362,8 +1401,8 @@ DaGood.Invisible.Text = "Invisible"
 DaGood.Invisible.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Invisible.TextSize = 14.000
 
-DaGood.UICorner_63.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_63.Parent = DaGood.Invisible
+DaGood.UICorner_66.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_66.Parent = DaGood.Invisible
 
 DaGood.InfTools.Name = "InfTools"
 DaGood.InfTools.Parent = DaGood.SideScripts
@@ -1376,8 +1415,8 @@ DaGood.InfTools.Text = "InfTools"
 DaGood.InfTools.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.InfTools.TextSize = 14.000
 
-DaGood.UICorner_64.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_64.Parent = DaGood.InfTools
+DaGood.UICorner_67.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_67.Parent = DaGood.InfTools
 
 DaGood.UIGridLayout_4.Parent = DaGood.SideScripts
 DaGood.UIGridLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -1413,27 +1452,6 @@ DaGood.QToTpColor.Font = Enum.Font.SourceSans
 DaGood.QToTpColor.Text = ""
 DaGood.QToTpColor.TextColor3 = Color3.fromRGB(255, 0, 0)
 DaGood.QToTpColor.TextSize = 14.000
-
-DaGood.HideBlock.Name = "HideBlock"
-DaGood.HideBlock.Parent = DaGood.Toggles
-DaGood.HideBlock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-DaGood.HideBlock.BorderSizePixel = 0
-DaGood.HideBlock.Position = UDim2.new(0.024917312, 0, 0.221326202, 0)
-DaGood.HideBlock.Size = UDim2.new(0, 94, 0, 46)
-DaGood.HideBlock.Font = Enum.Font.GothamBlack
-DaGood.HideBlock.Text = "Hide Block"
-DaGood.HideBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.HideBlock.TextSize = 14.000
-
-DaGood.HideBlockColor.Name = "HideBlockColor"
-DaGood.HideBlockColor.Parent = DaGood.HideBlock
-DaGood.HideBlockColor.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.HideBlockColor.BorderSizePixel = 0
-DaGood.HideBlockColor.Size = UDim2.new(0, 93, 0, 5)
-DaGood.HideBlockColor.Font = Enum.Font.SourceSans
-DaGood.HideBlockColor.Text = ""
-DaGood.HideBlockColor.TextColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.HideBlockColor.TextSize = 14.000
 
 DaGood.HideUser.Name = "HideUser"
 DaGood.HideUser.Parent = DaGood.Toggles
@@ -1645,27 +1663,6 @@ DaGood.AntiEffectsColor.Text = ""
 DaGood.AntiEffectsColor.TextColor3 = Color3.fromRGB(255, 0, 0)
 DaGood.AntiEffectsColor.TextSize = 14.000
 
-DaGood.AltArmor.Name = "AltArmor"
-DaGood.AltArmor.Parent = DaGood.Toggles
-DaGood.AltArmor.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-DaGood.AltArmor.BorderSizePixel = 0
-DaGood.AltArmor.Position = UDim2.new(0.677926719, 0, 0.590557039, 0)
-DaGood.AltArmor.Size = UDim2.new(0, 94, 0, 46)
-DaGood.AltArmor.Font = Enum.Font.GothamBlack
-DaGood.AltArmor.Text = "Alt Armor"
-DaGood.AltArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.AltArmor.TextSize = 14.000
-
-DaGood.AltArmorColor.Name = "AltArmorColor"
-DaGood.AltArmorColor.Parent = DaGood.AltArmor
-DaGood.AltArmorColor.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.AltArmorColor.BorderSizePixel = 0
-DaGood.AltArmorColor.Size = UDim2.new(0, 93, 0, 5)
-DaGood.AltArmorColor.Font = Enum.Font.SourceSans
-DaGood.AltArmorColor.Text = ""
-DaGood.AltArmorColor.TextColor3 = Color3.fromRGB(255, 0, 0)
-DaGood.AltArmorColor.TextSize = 14.000
-
 DaGood.AntiBag.Name = "AntiBag"
 DaGood.AntiBag.Parent = DaGood.Toggles
 DaGood.AntiBag.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
@@ -1718,14 +1715,9 @@ DaGood.X.Parent = DaGood.Frame
 DaGood.X.AnchorPoint = Vector2.new(0, 0.5)
 DaGood.X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.X.BackgroundTransparency = 1.000
-DaGood.X.Position = UDim2.new(0.0149999997, 0, 0.5, 0)
-DaGood.X.Size = UDim2.new(0, 150, 0, 320)
+DaGood.X.Position = UDim2.new(0, 0, 0.5, 0)
+DaGood.X.Size = UDim2.new(0, 150, 1, 0)
 DaGood.X.ZIndex = 0
-
-DaGood.UIListLayout.Parent = DaGood.X
-DaGood.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-DaGood.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-DaGood.UIListLayout.Padding = UDim.new(0, 6)
 
 DaGood.Title.Name = "Title"
 DaGood.Title.Parent = DaGood.X
@@ -1753,22 +1745,22 @@ DaGood.Home_2.Text = "Home"
 DaGood.Home_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Home_2.TextSize = 14.000
 
-DaGood.UICorner_65.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_65.Parent = DaGood.Home_2
+DaGood.UICorner_68.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_68.Parent = DaGood.Home_2
 
-DaGood.Player_3.Name = "Player"
-DaGood.Player_3.Parent = DaGood.X
-DaGood.Player_3.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-DaGood.Player_3.BorderSizePixel = 0
-DaGood.Player_3.Position = UDim2.new(0.098662138, 0, 0.184642166, 0)
-DaGood.Player_3.Size = UDim2.new(0, 123, 0, 30)
-DaGood.Player_3.Font = Enum.Font.GothamBlack
-DaGood.Player_3.Text = "Main Scripts"
-DaGood.Player_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaGood.Player_3.TextSize = 14.000
+DaGood.Player_2.Name = "Player"
+DaGood.Player_2.Parent = DaGood.X
+DaGood.Player_2.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+DaGood.Player_2.BorderSizePixel = 0
+DaGood.Player_2.Position = UDim2.new(0.098662138, 0, 0.184642166, 0)
+DaGood.Player_2.Size = UDim2.new(0, 123, 0, 30)
+DaGood.Player_2.Font = Enum.Font.GothamBlack
+DaGood.Player_2.Text = "Main Scripts"
+DaGood.Player_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaGood.Player_2.TextSize = 14.000
 
-DaGood.UICorner_66.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_66.Parent = DaGood.Player_3
+DaGood.UICorner_69.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_69.Parent = DaGood.Player_2
 
 DaGood.SideScripts_2.Name = "SideScripts"
 DaGood.SideScripts_2.Parent = DaGood.X
@@ -1781,8 +1773,8 @@ DaGood.SideScripts_2.Text = "Side Scripts"
 DaGood.SideScripts_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SideScripts_2.TextSize = 14.000
 
-DaGood.UICorner_67.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_67.Parent = DaGood.SideScripts_2
+DaGood.UICorner_70.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_70.Parent = DaGood.SideScripts_2
 
 DaGood.Toggles_2.Name = "Toggles"
 DaGood.Toggles_2.Parent = DaGood.X
@@ -1795,8 +1787,8 @@ DaGood.Toggles_2.Text = "Toggles"
 DaGood.Toggles_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Toggles_2.TextSize = 14.000
 
-DaGood.UICorner_68.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_68.Parent = DaGood.Toggles_2
+DaGood.UICorner_71.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_71.Parent = DaGood.Toggles_2
 
 DaGood.QuickBuy_2.Name = "QuickBuy"
 DaGood.QuickBuy_2.Parent = DaGood.X
@@ -1809,8 +1801,8 @@ DaGood.QuickBuy_2.Text = "Quick Buy"
 DaGood.QuickBuy_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.QuickBuy_2.TextSize = 14.000
 
-DaGood.UICorner_69.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_69.Parent = DaGood.QuickBuy_2
+DaGood.UICorner_72.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_72.Parent = DaGood.QuickBuy_2
 
 DaGood.QuickTp_2.Name = "QuickTp"
 DaGood.QuickTp_2.Parent = DaGood.X
@@ -1823,8 +1815,8 @@ DaGood.QuickTp_2.Text = "Quick TP"
 DaGood.QuickTp_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.QuickTp_2.TextSize = 14.000
 
-DaGood.UICorner_70.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_70.Parent = DaGood.QuickTp_2
+DaGood.UICorner_73.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_73.Parent = DaGood.QuickTp_2
 
 DaGood.SellingTools_2.Name = "SellingTools"
 DaGood.SellingTools_2.Parent = DaGood.X
@@ -1837,8 +1829,8 @@ DaGood.SellingTools_2.Text = "Selling Tools"
 DaGood.SellingTools_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.SellingTools_2.TextSize = 14.000
 
-DaGood.UICorner_71.CornerRadius = UDim.new(0.100000001, 0)
-DaGood.UICorner_71.Parent = DaGood.SellingTools_2
+DaGood.UICorner_74.CornerRadius = UDim.new(0.100000001, 0)
+DaGood.UICorner_74.Parent = DaGood.SellingTools_2
 
 DaGood.Specs.Name = "Specs"
 DaGood.Specs.Parent = DaGood.X
@@ -1846,16 +1838,22 @@ DaGood.Specs.AnchorPoint = Vector2.new(0, 1)
 DaGood.Specs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Specs.BackgroundTransparency = 1.000
 DaGood.Specs.Position = UDim2.new(0, 0, 1, 0)
-DaGood.Specs.Size = UDim2.new(0, 123, 0, 30)
+DaGood.Specs.Size = UDim2.new(0, 123, 0, 25)
 DaGood.Specs.Font = Enum.Font.GothamBlack
 DaGood.Specs.Text = "FPS: 0"
 DaGood.Specs.TextColor3 = Color3.fromRGB(255, 255, 255)
 DaGood.Specs.TextSize = 14.000
 
+DaGood.UIListLayout.Parent = DaGood.X
+DaGood.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+DaGood.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+DaGood.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+DaGood.UIListLayout.Padding = UDim.new(0, 7)
+
 -- Scripts:
 
-local function AALCV_fake_script() -- DaGood.Player.Client 
-	local script = Instance.new('LocalScript', DaGood.Player)
+local function RWBZ_fake_script() -- DaGood.Target.Client 
+	local script = Instance.new('LocalScript', DaGood.Target)
 
 	local textbox = script.Parent.input
 	local icon = script.Parent.icon
@@ -1921,26 +1919,164 @@ local function AALCV_fake_script() -- DaGood.Player.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(AALCV_fake_script)()
-local function LQOP_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(RWBZ_fake_script)()
+local function OLAGLI_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
 	local input = script.Parent.Parent.input
-	
-	local hover = false
 	
 	button.MouseButton1Click:Connect(function()
 		if game.Players:FindFirstChild(input.Text) then
 			local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local target = game.Players:FindFirstChild(input.Text).Character.HumanoidRootPart
 			
-			player.CFrame = target.CFrame
+			player.Position = target.Position - Vector3.new(0,5,0)
 		end
 	end)
 end
-coroutine.wrap(LQOP_fake_script)()
-local function TUSRQXD_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(OLAGLI_fake_script)()
+local function EOHJPFX_fake_script() -- DaGood.Reach.X 
+	local script = Instance.new('LocalScript', DaGood.Reach)
+
+	local Reach = script.Parent
+	local player = game:GetService('Players').LocalPlayer
+	
+	Reach.MouseButton1Click:Connect(function()
+		if Reach.Text == 'ToolReach' then
+			if player.Character:FindFirstChildWhichIsA('Tool') then
+				player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(500,500,500)
+				player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
+			else
+				announce('Reach Error', 'you need to be holding a tool', 3)
+			end
+		else
+			if Reach.Text == 'Reach' then
+				Reach.Text = 'Unreach'
+				while Reach.Text == 'Unreach' do
+					wait()
+					local success, err = pcall(function()
+						if player.Character.BodyEffects.Attacking.Value == true then
+							for i,v in pairs(game:GetService('Players'):GetChildren()) do
+								if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.LeftHand.Position).Magnitude <= 50 then
+									if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+										if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):FindFirstChild('Handle') then
+											firetouchinterest(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Handle, v.Character.UpperTorso, 0)
+										else
+											firetouchinterest(game.Players.LocalPlayer.Character['RightHand'], v.Character.UpperTorso, 0)
+											firetouchinterest(game.Players.LocalPlayer.Character['LeftHand'], v.Character.UpperTorso, 0)
+											firetouchinterest(game.Players.LocalPlayer.Character['RightFoot'], v.Character.UpperTorso, 0)
+											firetouchinterest(game.Players.LocalPlayer.Character['LeftFoot'], v.Character.UpperTorso, 0)
+											firetouchinterest(game.Players.LocalPlayer.Character['RightLowerLeg'], v.Character.UpperTorso, 0)
+											firetouchinterest(game.Players.LocalPlayer.Character['LeftLowerLeg'], v.Character.UpperTorso, 0)
+										end
+									end
+								end
+							end
+						end
+					end)
+				end
+			else
+				Reach.Text = 'Reach'
+			end
+		end
+	end)
+	
+	function announce(title,text,time)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = title;
+			Text = text;
+			Duration = time;
+		})
+	end
+end
+coroutine.wrap(EOHJPFX_fake_script)()
+local function JRJJO_fake_script() -- DaGood.Target_2.X 
+	local script = Instance.new('LocalScript', DaGood.Target_2)
+
+	local Target = script.Parent
+	local player = game:GetService('Players').LocalPlayer
+	
+	local input = script.Parent.Parent.Parent.Parent.Target.input
+	
+	Target.MouseButton1Click:Connect(function()
+		if Target.Text == 'Target' then
+			Target.Text = 'Untarget'
+			pcall(function()
+				player.Character.LeftHand.LeftWrist:Destroy();
+				player.Character.RightHand.RightWrist:Destroy();
+			end);
+			local loopFunction = function()
+				if game.Players:FindFirstChild(input.Text).Character then
+					player.Character.LeftHand.CFrame  = CFrame.new(game.Players[input.Text].Character.UpperTorso.Position);
+					player.Character.RightHand.CFrame = CFrame.new(game.Players[input.Text].Character.UpperTorso.Position);
+					if game.Players:FindFirstChild(input.Text).Character.BodyEffects['K.O'].Value == true then
+						Target.Text = 'Target'
+					end
+				else
+					Target.Text = 'Target'
+				end
+			end;        
+			local Loop
+			local Start = function()
+				Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+			end;         
+			local Pause = function()
+				Loop:Disconnect()
+				announce('Target', 'no longer targeting', 5)
+				player.Character.LeftHand.CFrame  = player.Character.LeftLowerArm.CFrame
+				player.Character.RightHand.CFrame = player.Character.RightLowerArm.CFrame
+			end;
+			Start()
+			repeat wait() until Target.Text == 'Target'
+			Pause()
+		else
+			Target.Text = 'Target'
+		end
+	end)
+	
+	function announce(title,text,time)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = title;
+			Text = text;
+			Duration = time;
+		})
+	end
+end
+coroutine.wrap(JRJJO_fake_script)()
+local function CNXPV_fake_script() -- DaGood.View.X 
+	local script = Instance.new('LocalScript', DaGood.View)
+
+	local View = script.Parent
+	local input = script.Parent.Parent.Parent.Parent.Target.input
+	
+	local player = game:GetService('Players').LocalPlayer
+	
+	View.MouseButton1Click:Connect(function()
+		if View.Text == 'View' then
+			View.Text = 'Unview'
+			repeat view(input.Text) until View.Text == 'View'
+			game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = player.Character:FindFirstChildWhichIsA('Humanoid')
+		else
+			View.Text = 'View'
+		end
+	end)
+	
+	function view(plr)
+		wait()
+		if game.Players:FindFirstChild(plr) then
+			if game.Players[plr].Character then
+				game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = game.Players:FindFirstChild(plr).Character.HumanoidRootPart
+			else
+				View.Text = 'View'
+			end
+		else
+			View.Text = 'View'
+		end
+	end
+end
+coroutine.wrap(CNXPV_fake_script)()
+local function SBJL_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -1949,8 +2085,302 @@ local function TUSRQXD_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(TUSRQXD_fake_script)()
-local function VFER_fake_script() -- DaGood.PlayersImage.LocalScript 
+coroutine.wrap(SBJL_fake_script)()
+local function ODRXWZ_fake_script() -- DaGood.Fling.X 
+	local script = Instance.new('LocalScript', DaGood.Fling)
+
+	local Players = game:GetService('Players')
+	local player = Players.LocalPlayer
+	
+	local Fling = script.Parent
+	local input = script.Parent.Parent.Parent.Parent.Target.input
+	
+	Fling.MouseButton1Click:Connect(function()
+		if Fling.Text == 'Fling' then
+			Fling.Text = 'Unfling'
+			local Loop
+			local OldFlingPos = player.Character.HumanoidRootPart.Position
+			local loopFunction = function()
+				local success,err = pcall(function()
+					local FlingEnemy = Players:FindFirstChild(input.Text).Character
+					if FlingEnemy and player.Character then
+						FlingTorso = FlingEnemy.UpperTorso
+						local dis = 3.85
+						local increase = 6
+						if FlingEnemy.Humanoid.MoveDirection.X < 0 then
+							xchange = -increase
+						elseif FlingEnemy.Humanoid.MoveDirection.X > 0  then
+							xchange = increase
+						else
+							xchange = 0
+						end
+						if FlingEnemy.Humanoid.MoveDirection.Z < 0 then
+							zchange = -increase
+						elseif FlingEnemy.Humanoid.MoveDirection.Z > 0 then
+							zchange = increase
+						else
+							zchange = 0
+						end          
+						if player.Character then
+							player.Character:FindFirstChildWhichIsA('Humanoid'):ChangeState(11)
+							player.Character.HumanoidRootPart.CFrame = CFrame.new(FlingTorso.Position.X + math.random(-dis,dis) + xchange, FlingTorso.Position.Y, FlingTorso.Position.Z + math.random(-dis,dis) + zchange) * CFrame.Angles(math.rad(player.Character.HumanoidRootPart.Orientation.X + 350),math.rad(player.Character.HumanoidRootPart.Orientation.Y + 200),math.rad(player.Character.HumanoidRootPart.Orientation.Z + 240))
+							player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
+						end
+					end
+				end)
+				if err then
+					print('fling error : ' .. err)
+				end
+			end;
+			local Start = function()    
+				OldFlingPos = player.Character.HumanoidRootPart.Position
+				Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+			end;
+			local Pause = function()
+				Loop:Disconnect()
+				local vectorZero = Vector3.new(0, 0, 0)
+				player.Character.PrimaryPart.Velocity = vectorZero
+				player.Character.PrimaryPart.RotVelocity = vectorZero
+				player.Character.HumanoidRootPart.CFrame = CFrame.new(OldFlingPos) * CFrame.Angles(math.rad(0),math.rad(137.92),math.rad(0))
+			end;
+			Start()	
+			repeat wait() until Fling.Text == 'Fling'
+			Pause()
+		else
+			Fling.Text = 'Fling'
+		end
+	end)
+end
+coroutine.wrap(ODRXWZ_fake_script)()
+local function RUBU_fake_script() -- DaGood.NoClip.X 
+	local script = Instance.new('LocalScript', DaGood.NoClip)
+
+	local NoClip = script.Parent
+	
+	local player = game:GetService('Players').LocalPlayer
+	local OldState = player.Character:FindFirstChildWhichIsA('Humanoid'):GetState()
+	
+	local UIS = game:GetService('UserInputService')
+	
+	NoClip.MouseButton1Click:Connect(function()
+		local Character = player.Character
+		local Humanoid = Character:FindFirstChildWhichIsA('Humanoid')
+		local Control = false
+		local loopFunction = function()
+			Humanoid:ChangeState(11)
+		end;
+		local Loop
+		local Start = function()
+			if Control == false then
+				Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+			end
+		end;
+		local Ended = function()
+			if Control == true then
+				Humanoid:ChangeState(OldState)
+			end
+		end;
+		Start()	
+		local Pause = function()
+			Loop:Disconnect()
+		end;
+		local Pause2 = function()
+			Start();
+			Loop2:Disconnect()
+		end;
+		UIS.InputBegan:Connect(function(a, b)
+			if a.KeyCode == Enum.KeyCode.Z and not b then
+				if Control == false then
+					Control = true;
+					Ended();
+					Pause();
+				elseif Control == true then
+					Control = false;
+					Pause2();
+				end;
+			end;
+		end);	
+	end)
+end
+coroutine.wrap(RUBU_fake_script)()
+local function JOBQHLQ_fake_script() -- DaGood.Fly.X 
+	local script = Instance.new('LocalScript', DaGood.Fly)
+
+	local Fly = script.Parent
+	local input = script.Parent.Input
+	
+	Fly.MouseButton1Click:Connect(function()
+		local FLYSPEED = tonumber(script.Parent.Input.Text)
+		print(FLYSPEED)
+	
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character:FindFirstChildWhichIsA('Humanoid')
+		local mouse = player:GetMouse()
+		
+		if workspace:FindFirstChild("Core") then
+			workspace.Core:Destroy()
+		end
+		
+		local Core = Instance.new("Part")
+		Core.Name = "Core"
+		Core.Size = Vector3.new(0.05, 0.05, 0.05)
+		
+		spawn(function()
+			Core.Parent = workspace
+			local Weld = Instance.new("Weld", Core)
+			Weld.Part0 = Core
+			Weld.Part1 = player.Character.LowerTorso
+			Weld.C0 = CFrame.new(0, 0, 0)
+		end)
+		
+		workspace:WaitForChild("Core")
+		
+		local torso = workspace.Core
+		local flying = true
+		local speed = FLYSPEED
+		
+		input.FocusLost:Connect(function(enter)
+			if (enter) then
+				FLYSPEED = input.Text
+				speed = FLYSPEED
+			end
+		end)
+		
+		local keys = { a = false, d = false, w = false, s = false }
+		local e1
+		local e2
+		
+		local function start()
+			local pos = Instance.new("BodyPosition", torso)
+			local gyro = Instance.new("BodyGyro", torso)
+			
+			pos.Name="EPIXPOS"
+			pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+			pos.Position = torso.Position
+			
+			gyro.maxTorque = Vector3.new(15e15, 15e15, 15e15)
+			gyro.cframe = torso.CFrame
+			
+			repeat
+				wait()
+				humanoid.PlatformStand = true
+				
+				local new = gyro.cframe - gyro.cframe.p + pos.Position
+				
+				if not keys.w and not keys.s and not keys.a and not keys.d then
+					speed=FLYSPEED
+				end
+				
+				if keys.w then
+					new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+					speed=speed
+				end
+				
+				if keys.s then
+					new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+					speed=speed
+				end
+				
+				if keys.d then
+					new = new * CFrame.new(speed,0,0)
+					speed=speed
+				end
+				
+				if keys.a then
+					new = new * CFrame.new(-speed,0,0)
+					speed=speed
+				end
+				
+				if speed>FLYSPEED then
+					speed=FLYSPEED
+				end
+				
+				pos.Position = new.p
+				
+				if keys.w then
+					gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed),0,0)
+				elseif keys.s then
+					gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed),0,0)
+				else
+					gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+				end
+			until flying == false
+			
+			if gyro then gyro:Destroy() end
+			if pos then pos:Destroy() end
+			
+			flying = false
+			humanoid.PlatformStand = false
+			speed = FLYSPEED
+		end
+		
+		e1 = mouse.KeyDown:connect(function(key)
+			if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+			
+			if key == "w" then
+				keys.w = true
+			elseif key == "s" then
+				keys.s = true
+			elseif key == "a" then
+				keys.a = true
+			elseif key == "d" then
+				keys.d = true
+			elseif key == "x" then
+				if flying == true then
+					flying = false
+				else
+					flying = true
+					start()
+				end
+			end
+		end)
+		
+		e2=mouse.KeyUp:connect(function(key)
+			if key == "w" then
+				keys.w = false
+			elseif key == "s" then
+				keys.s = false
+			elseif key == "a" then
+				keys.a = false
+			elseif key == "d" then
+				keys.d = false
+			end
+		end)
+		
+		start()
+		
+		player.CharacterAdded:Connect(function()
+			repeat wait() until player.Character
+			wait(1)
+		end)
+	end)
+end
+coroutine.wrap(JOBQHLQ_fake_script)()
+local function EWDLJUU_fake_script() -- DaGood.DropDown.X 
+	local script = Instance.new('LocalScript', DaGood.DropDown)
+
+	local DropDown = script.Parent
+	local Input = script.Parent.Parent.Input
+	
+	local Collapsed = Vector2.new(564, 284)
+	local Expanded = Vector2.new(44, 404)
+	
+	DropDown.MouseButton1Click:Connect(function()
+		if (DropDown.ImageRectOffset == Collapsed) then
+			DropDown.ImageRectOffset = Expanded
+			
+			Input.Visible = true
+			--// print('DropDown Menu Enabled')
+		else
+			DropDown.ImageRectOffset = Collapsed
+			
+			Input.Visible = false
+			--// print('DropDown Menu Disabled')
+		end
+	end)
+end
+coroutine.wrap(EWDLJUU_fake_script)()
+local function UEFVEF_fake_script() -- DaGood.PlayersImage.X 
 	local script = Instance.new('LocalScript', DaGood.PlayersImage)
 
 	local player = game.Players.LocalPlayer
@@ -1958,8 +2388,14 @@ local function VFER_fake_script() -- DaGood.PlayersImage.LocalScript
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(VFER_fake_script)()
-local function CBSJQBD_fake_script() -- DaGood.CashAura.LocalScript 
+coroutine.wrap(UEFVEF_fake_script)()
+local function XADBYB_fake_script() -- DaGood.QToTp.X 
+	local script = Instance.new('LocalScript', DaGood.QToTp)
+
+	
+end
+coroutine.wrap(XADBYB_fake_script)()
+local function WRSFZHD_fake_script() -- DaGood.CashAura.X 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -1993,8 +2429,8 @@ local function CBSJQBD_fake_script() -- DaGood.CashAura.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CBSJQBD_fake_script)()
-local function OOKN_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(WRSFZHD_fake_script)()
+local function CFJI_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2007,7 +2443,7 @@ local function OOKN_fake_script() -- DaGood.Frame.Client
 	-- // open frames
 	
 	local Y = script.Parent.Y
-	local X = script.Parent.X.Y
+	local X = script.Parent.X
 	
 	-- // subcategories
 	
@@ -2058,13 +2494,18 @@ local function OOKN_fake_script() -- DaGood.Frame.Client
 			end)
 		end
 	end
+	
+	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(OOKN_fake_script)()
-local function VOYU_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(CFJI_fake_script)()
+local function WASGLYF_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
-	local FPS = script.Parent
+	local RunService = game:GetService('RunService')
+	local Specs = script.Parent
 	
-	FPS.Text = game:GetService("RunService").RenderStepped:Wait()
+	while wait(0) do
+		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
+	end
 end
-coroutine.wrap(VOYU_fake_script)()
+coroutine.wrap(WASGLYF_fake_script)()
