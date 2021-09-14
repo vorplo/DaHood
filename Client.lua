@@ -501,8 +501,8 @@ DaGood.Input_2.Size = UDim2.new(1, 0, 0, 25)
 DaGood.Input_2.Visible = false
 DaGood.Input_2.Font = Enum.Font.GothamBold
 DaGood.Input_2.PlaceholderColor3 = Color3.fromRGB(84, 84, 84)
-DaGood.Input_2.PlaceholderText = "Fly Speed"
-DaGood.Input_2.Text = "17"
+DaGood.Input_2.PlaceholderText = "Walk Speed"
+DaGood.Input_2.Text = "32"
 DaGood.Input_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 DaGood.Input_2.TextSize = 12.000
 
@@ -1894,7 +1894,7 @@ DaGood.Specs.TextSize = 14.000
 
 -- Scripts:
 
-local function XKUXC_fake_script() -- DaGood.Target.Client 
+local function NWZDPZX_fake_script() -- DaGood.Target.Client 
 	local script = Instance.new('LocalScript', DaGood.Target)
 
 	local textbox = script.Parent.input
@@ -1961,8 +1961,8 @@ local function XKUXC_fake_script() -- DaGood.Target.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(XKUXC_fake_script)()
-local function STFKS_fake_script() -- DaGood.goTo.X 
+coroutine.wrap(NWZDPZX_fake_script)()
+local function IIAU_fake_script() -- DaGood.goTo.X 
 	local script = Instance.new('LocalScript', DaGood.goTo)
 
 	local button = script.Parent
@@ -1977,8 +1977,8 @@ local function STFKS_fake_script() -- DaGood.goTo.X
 		end
 	end)
 end
-coroutine.wrap(STFKS_fake_script)()
-local function JIGJI_fake_script() -- DaGood.Reach.X 
+coroutine.wrap(IIAU_fake_script)()
+local function IQZHSP_fake_script() -- DaGood.Reach.X 
 	local script = Instance.new('LocalScript', DaGood.Reach)
 
 	local Reach = script.Parent
@@ -2032,8 +2032,8 @@ local function JIGJI_fake_script() -- DaGood.Reach.X
 		})
 	end
 end
-coroutine.wrap(JIGJI_fake_script)()
-local function RPZX_fake_script() -- DaGood.Target_2.X 
+coroutine.wrap(IQZHSP_fake_script)()
+local function WBTOUL_fake_script() -- DaGood.Target_2.X 
 	local script = Instance.new('LocalScript', DaGood.Target_2)
 
 	local Target = script.Parent
@@ -2085,8 +2085,8 @@ local function RPZX_fake_script() -- DaGood.Target_2.X
 		})
 	end
 end
-coroutine.wrap(RPZX_fake_script)()
-local function QJNJR_fake_script() -- DaGood.View.X 
+coroutine.wrap(WBTOUL_fake_script)()
+local function CYTWSI_fake_script() -- DaGood.View.X 
 	local script = Instance.new('LocalScript', DaGood.View)
 
 	local View = script.Parent
@@ -2117,8 +2117,8 @@ local function QJNJR_fake_script() -- DaGood.View.X
 		end
 	end
 end
-coroutine.wrap(QJNJR_fake_script)()
-local function HQHU_fake_script() -- DaGood.Unban.X 
+coroutine.wrap(CYTWSI_fake_script)()
+local function ULVY_fake_script() -- DaGood.Unban.X 
 	local script = Instance.new('LocalScript', DaGood.Unban)
 
 	local Button = script.Parent
@@ -2127,8 +2127,8 @@ local function HQHU_fake_script() -- DaGood.Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(HQHU_fake_script)()
-local function TMOD_fake_script() -- DaGood.Fling.X 
+coroutine.wrap(ULVY_fake_script)()
+local function EOQETG_fake_script() -- DaGood.Fling.X 
 	local script = Instance.new('LocalScript', DaGood.Fling)
 
 	local Players = game:GetService('Players')
@@ -2193,8 +2193,8 @@ local function TMOD_fake_script() -- DaGood.Fling.X
 		end
 	end)
 end
-coroutine.wrap(TMOD_fake_script)()
-local function OTZNHJ_fake_script() -- DaGood.NoClip.X 
+coroutine.wrap(EOQETG_fake_script)()
+local function PWWMB_fake_script() -- DaGood.NoClip.X 
 	local script = Instance.new('LocalScript', DaGood.NoClip)
 
 	local NoClip = script.Parent
@@ -2244,8 +2244,8 @@ local function OTZNHJ_fake_script() -- DaGood.NoClip.X
 		end);	
 	end)
 end
-coroutine.wrap(OTZNHJ_fake_script)()
-local function KFGET_fake_script() -- DaGood.Fly.X 
+coroutine.wrap(PWWMB_fake_script)()
+local function IQYXVGB_fake_script() -- DaGood.Fly.X 
 	local script = Instance.new('LocalScript', DaGood.Fly)
 
 	local Fly = script.Parent
@@ -2396,8 +2396,8 @@ local function KFGET_fake_script() -- DaGood.Fly.X
 		end)
 	end)
 end
-coroutine.wrap(KFGET_fake_script)()
-local function RESUXQ_fake_script() -- DaGood.DropDown.X 
+coroutine.wrap(IQYXVGB_fake_script)()
+local function JNLQ_fake_script() -- DaGood.DropDown.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown)
 
 	local DropDown = script.Parent
@@ -2420,29 +2420,31 @@ local function RESUXQ_fake_script() -- DaGood.DropDown.X
 		end
 	end)
 end
-coroutine.wrap(RESUXQ_fake_script)()
-local function OSXWH_fake_script() -- DaGood.Speed.X 
+coroutine.wrap(JNLQ_fake_script)()
+local function GWQIZD_fake_script() -- DaGood.Speed.X 
 	local script = Instance.new('LocalScript', DaGood.Speed)
 
 	local player = game:GetService('Players').LocalPlayer
-	local char = player.Character:FindFirstAncestorWhichIsA('Humanoid').WalkSpeed
 	
 	local button = script.Parent
 	local input = script.Parent.Input
 	
-	local walkSpeed = tonumber(input.Text)
-	
 	button.MouseButton1Click:Connect(function()
-		char = walkSpeed or 32
-		
-		input.FocusLost:Connect(function()
-			walkSpeed = tonumber(input.Text)
-			char = walkSpeed
+		local char = player.Character
+		local walkspeed = tonumber(input.Text)
+	
+		char.Humanoid.WalkSpeed = walkspeed
+	
+		input.FocusLost:Connect(function(enter)
+			if (enter) then
+				char.Humanoid.WalkSpeed = tonumber(input.Text)
+			end
 		end)
 	end)
+	
 end
-coroutine.wrap(OSXWH_fake_script)()
-local function GICUWG_fake_script() -- DaGood.DropDown_2.X 
+coroutine.wrap(GWQIZD_fake_script)()
+local function HFSGVHC_fake_script() -- DaGood.DropDown_2.X 
 	local script = Instance.new('LocalScript', DaGood.DropDown_2)
 
 	local DropDown = script.Parent
@@ -2465,8 +2467,8 @@ local function GICUWG_fake_script() -- DaGood.DropDown_2.X
 		end
 	end)
 end
-coroutine.wrap(GICUWG_fake_script)()
-local function WXUXQZZ_fake_script() -- DaGood.Icon.X 
+coroutine.wrap(HFSGVHC_fake_script)()
+local function YXWYCB_fake_script() -- DaGood.Icon.X 
 	local script = Instance.new('LocalScript', DaGood.Icon)
 
 	local player = game.Players.LocalPlayer
@@ -2474,8 +2476,8 @@ local function WXUXQZZ_fake_script() -- DaGood.Icon.X
 	
 	icon = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(WXUXQZZ_fake_script)()
-local function THTYR_fake_script() -- DaGood.Username.X 
+coroutine.wrap(YXWYCB_fake_script)()
+local function YMLVWC_fake_script() -- DaGood.Username.X 
 	local script = Instance.new('LocalScript', DaGood.Username)
 
 	local player = game.Players.LocalPlayer
@@ -2483,14 +2485,14 @@ local function THTYR_fake_script() -- DaGood.Username.X
 	
 	text = player.Name
 end
-coroutine.wrap(THTYR_fake_script)()
-local function ZYOIABK_fake_script() -- DaGood.QToTp.X 
+coroutine.wrap(YMLVWC_fake_script)()
+local function QUAOOT_fake_script() -- DaGood.QToTp.X 
 	local script = Instance.new('LocalScript', DaGood.QToTp)
 
 	
 end
-coroutine.wrap(ZYOIABK_fake_script)()
-local function YIPKXC_fake_script() -- DaGood.CashAura.X 
+coroutine.wrap(QUAOOT_fake_script)()
+local function QEPA_fake_script() -- DaGood.CashAura.X 
 	local script = Instance.new('LocalScript', DaGood.CashAura)
 
 	local CashAura = script.Parent
@@ -2524,8 +2526,8 @@ local function YIPKXC_fake_script() -- DaGood.CashAura.X
 		end
 	end)
 end
-coroutine.wrap(YIPKXC_fake_script)()
-local function WAPZEON_fake_script() -- DaGood.Frame.Client 
+coroutine.wrap(QEPA_fake_script)()
+local function HUJT_fake_script() -- DaGood.Frame.Client 
 	local script = Instance.new('LocalScript', DaGood.Frame)
 
 	-- // draggable
@@ -2592,8 +2594,8 @@ local function WAPZEON_fake_script() -- DaGood.Frame.Client
 	
 	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(WAPZEON_fake_script)()
-local function KHGUUWW_fake_script() -- DaGood.Specs.X 
+coroutine.wrap(HUJT_fake_script)()
+local function FZYU_fake_script() -- DaGood.Specs.X 
 	local script = Instance.new('LocalScript', DaGood.Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2603,4 +2605,4 @@ local function KHGUUWW_fake_script() -- DaGood.Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(KHGUUWW_fake_script)()
+coroutine.wrap(FZYU_fake_script)()
