@@ -332,6 +332,7 @@ Target_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Target_2.BackgroundTransparency = 1.000
 Target_2.Position = UDim2.new(0, 0, 0.5, 0)
 Target_2.Size = UDim2.new(0, 298, 0, 300)
+Target_2.Visible = false
 
 UIGridLayout.Parent = Target_2
 UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -626,7 +627,6 @@ Home.BackgroundTransparency = 1.000
 Home.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Home.Position = UDim2.new(0, 0, 0.5, 0)
 Home.Size = UDim2.new(0, 298, 0, 300)
-Home.Visible = false
 
 Welcome.Name = "Welcome"
 Welcome.Parent = Home
@@ -1755,7 +1755,7 @@ Specs.TextSize = 14.000
 
 -- Scripts:
 
-local function XLXU_fake_script() -- Target.Client 
+local function TBINDY_fake_script() -- Target.Client 
 	local script = Instance.new('LocalScript', Target)
 
 	local textbox = script.Parent.input
@@ -1822,8 +1822,8 @@ local function XLXU_fake_script() -- Target.Client
 		return matches[1]
 	end
 end
-coroutine.wrap(XLXU_fake_script)()
-local function EMMEJ_fake_script() -- goTo.X 
+coroutine.wrap(TBINDY_fake_script)()
+local function RWLE_fake_script() -- goTo.X 
 	local script = Instance.new('LocalScript', goTo)
 
 	local button = script.Parent
@@ -1838,8 +1838,8 @@ local function EMMEJ_fake_script() -- goTo.X
 		end
 	end)
 end
-coroutine.wrap(EMMEJ_fake_script)()
-local function EEXMRUY_fake_script() -- Reach.X 
+coroutine.wrap(RWLE_fake_script)()
+local function MRENDG_fake_script() -- Reach.X 
 	local script = Instance.new('LocalScript', Reach)
 
 	local Reach = script.Parent
@@ -1893,8 +1893,8 @@ local function EEXMRUY_fake_script() -- Reach.X
 		})
 	end
 end
-coroutine.wrap(EEXMRUY_fake_script)()
-local function QJUMYE_fake_script() -- Target_3.X 
+coroutine.wrap(MRENDG_fake_script)()
+local function ZOGHND_fake_script() -- Target_3.X 
 	local script = Instance.new('LocalScript', Target_3)
 
 	local Target = script.Parent
@@ -1946,8 +1946,8 @@ local function QJUMYE_fake_script() -- Target_3.X
 		})
 	end
 end
-coroutine.wrap(QJUMYE_fake_script)()
-local function UNEUKWL_fake_script() -- View.X 
+coroutine.wrap(ZOGHND_fake_script)()
+local function BSIDZF_fake_script() -- View.X 
 	local script = Instance.new('LocalScript', View)
 
 	local View = script.Parent
@@ -1978,8 +1978,8 @@ local function UNEUKWL_fake_script() -- View.X
 		end
 	end
 end
-coroutine.wrap(UNEUKWL_fake_script)()
-local function JNOB_fake_script() -- Fling.X 
+coroutine.wrap(BSIDZF_fake_script)()
+local function QNQDOSC_fake_script() -- Fling.X 
 	local script = Instance.new('LocalScript', Fling)
 
 	local Players = game:GetService('Players')
@@ -2044,8 +2044,8 @@ local function JNOB_fake_script() -- Fling.X
 		end
 	end)
 end
-coroutine.wrap(JNOB_fake_script)()
-local function VIIP_fake_script() -- NoClip.X 
+coroutine.wrap(QNQDOSC_fake_script)()
+local function LISFVAA_fake_script() -- NoClip.X 
 	local script = Instance.new('LocalScript', NoClip)
 
 	local NoClip = script.Parent
@@ -2095,8 +2095,8 @@ local function VIIP_fake_script() -- NoClip.X
 		end);	
 	end)
 end
-coroutine.wrap(VIIP_fake_script)()
-local function JWPNUWE_fake_script() -- Fly.X 
+coroutine.wrap(LISFVAA_fake_script)()
+local function DCKO_fake_script() -- Fly.X 
 	local script = Instance.new('LocalScript', Fly)
 
 	local Fly = script.Parent
@@ -2247,8 +2247,8 @@ local function JWPNUWE_fake_script() -- Fly.X
 		end)
 	end)
 end
-coroutine.wrap(JWPNUWE_fake_script)()
-local function ZRNZHG_fake_script() -- DropDown.X 
+coroutine.wrap(DCKO_fake_script)()
+local function EATET_fake_script() -- DropDown.X 
 	local script = Instance.new('LocalScript', DropDown)
 
 	local DropDown = script.Parent
@@ -2271,8 +2271,8 @@ local function ZRNZHG_fake_script() -- DropDown.X
 		end
 	end)
 end
-coroutine.wrap(ZRNZHG_fake_script)()
-local function CEKZ_fake_script() -- Unban.X 
+coroutine.wrap(EATET_fake_script)()
+local function PJPK_fake_script() -- Unban.X 
 	local script = Instance.new('LocalScript', Unban)
 
 	local Button = script.Parent
@@ -2281,8 +2281,8 @@ local function CEKZ_fake_script() -- Unban.X
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vorplo/DaHood/main/Unban", true))()	
 	end)
 end
-coroutine.wrap(CEKZ_fake_script)()
-local function QNQFO_fake_script() -- Speed.X 
+coroutine.wrap(PJPK_fake_script)()
+local function VVPQKNJ_fake_script() -- Speed.X 
 	local script = Instance.new('LocalScript', Speed)
 
 	local player = game:GetService('Players').LocalPlayer
@@ -2304,8 +2304,8 @@ local function QNQFO_fake_script() -- Speed.X
 	end)
 	
 end
-coroutine.wrap(QNQFO_fake_script)()
-local function VGCAY_fake_script() -- DropDown_2.X 
+coroutine.wrap(VVPQKNJ_fake_script)()
+local function XGUGTN_fake_script() -- DropDown_2.X 
 	local script = Instance.new('LocalScript', DropDown_2)
 
 	local DropDown = script.Parent
@@ -2328,8 +2328,8 @@ local function VGCAY_fake_script() -- DropDown_2.X
 		end
 	end)
 end
-coroutine.wrap(VGCAY_fake_script)()
-local function NWWZ_fake_script() -- Invisible.X 
+coroutine.wrap(XGUGTN_fake_script)()
+local function JKOQYQA_fake_script() -- Invisible.X 
 	local script = Instance.new('LocalScript', Invisible)
 
 	local player = game:GetService('Players').LocalPlayer
@@ -2372,8 +2372,8 @@ local function NWWZ_fake_script() -- Invisible.X
 		end
 	end)
 end
-coroutine.wrap(NWWZ_fake_script)()
-local function FQJDRYG_fake_script() -- MoneyESP.X 
+coroutine.wrap(JKOQYQA_fake_script)()
+local function BQWFTOF_fake_script() -- MoneyESP.X 
 	local script = Instance.new('LocalScript', MoneyESP)
 
 	local MoneyESP = script.Parent
@@ -2410,8 +2410,8 @@ local function FQJDRYG_fake_script() -- MoneyESP.X
 		end 
 	end)
 end
-coroutine.wrap(FQJDRYG_fake_script)()
-local function TPYDPOG_fake_script() -- Icon.X 
+coroutine.wrap(BQWFTOF_fake_script)()
+local function MOJBZ_fake_script() -- Icon.X 
 	local script = Instance.new('LocalScript', Icon)
 
 	local player = game.Players.LocalPlayer
@@ -2419,8 +2419,8 @@ local function TPYDPOG_fake_script() -- Icon.X
 	
 	icon.Image = game.Players:GetUserThumbnailAsync(player.UserId, 'HeadShot', 'Size420x420')
 end
-coroutine.wrap(TPYDPOG_fake_script)()
-local function QYMT_fake_script() -- Username.X 
+coroutine.wrap(MOJBZ_fake_script)()
+local function JXMDD_fake_script() -- Username.X 
 	local script = Instance.new('LocalScript', Username)
 
 	local player = game.Players.LocalPlayer
@@ -2428,14 +2428,14 @@ local function QYMT_fake_script() -- Username.X
 	
 	label.Text = player.Name
 end
-coroutine.wrap(QYMT_fake_script)()
-local function RBPLYZQ_fake_script() -- QToTp.X 
+coroutine.wrap(JXMDD_fake_script)()
+local function FJGOSQT_fake_script() -- QToTp.X 
 	local script = Instance.new('LocalScript', QToTp)
 
 	
 end
-coroutine.wrap(RBPLYZQ_fake_script)()
-local function TRPOCN_fake_script() -- CashAura.X 
+coroutine.wrap(FJGOSQT_fake_script)()
+local function NDOM_fake_script() -- CashAura.X 
 	local script = Instance.new('LocalScript', CashAura)
 
 	local player = game.Players.LocalPlayer
@@ -2453,11 +2453,6 @@ local function TRPOCN_fake_script() -- CashAura.X
 				for i,v in pairs(game:GetService('Workspace')['Ignored']['Drop']:GetChildren()) do
 					if v:IsA('Part') then
 						if (v.Position - char.HumanoidRootPart.Position).Magnitude <= 12 then
-							fireclickdetector(v:FindFirstChild('ClickDetector'))
-						else
-							wait(1)
-							const cFrame = 
-							char.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(13, 0, 13)
 							fireclickdetector(v:FindFirstChild('ClickDetector'))
 						end
 					end
@@ -2477,8 +2472,8 @@ local function TRPOCN_fake_script() -- CashAura.X
 		end
 	end)
 end
-coroutine.wrap(TRPOCN_fake_script)()
-local function CKGRR_fake_script() -- Frame.Client 
+coroutine.wrap(NDOM_fake_script)()
+local function KZJVOTT_fake_script() -- Frame.Client 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- // draggable
@@ -2545,8 +2540,8 @@ local function CKGRR_fake_script() -- Frame.Client
 	
 	loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))()
 end
-coroutine.wrap(CKGRR_fake_script)()
-local function AERPWI_fake_script() -- Specs.X 
+coroutine.wrap(KZJVOTT_fake_script)()
+local function GTHGN_fake_script() -- Specs.X 
 	local script = Instance.new('LocalScript', Specs)
 
 	local RunService = game:GetService('RunService')
@@ -2556,4 +2551,4 @@ local function AERPWI_fake_script() -- Specs.X
 		Specs.Text = 'Frames / Second: ' .. math.floor(1 / RunService.RenderStepped:Wait())
 	end
 end
-coroutine.wrap(AERPWI_fake_script)()
+coroutine.wrap(GTHGN_fake_script)()
